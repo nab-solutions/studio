@@ -130,27 +130,23 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
           About Our Emporium
         </h2>
         <Card className="bg-card overflow-hidden">
-            <CardContent className="p-0">
-                <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-                    <div className="relative h-80 w-full">
-                        {aboutUsImage && (
-                            <Image 
-                                src={aboutUsImage.imageUrl} 
-                                alt="About Stone Emporium" 
-                                fill 
-                                className="object-cover"
-                                data-ai-hint={aboutUsImage.imageHint}
-                            />
-                        )}
-                    </div>
-                    <div className="p-8 md:p-12">
-                        <p className="font-body text-lg mb-6 text-card-foreground">
-                            Stone Emporium has been a trusted name in the natural stone industry for over two decades. We are passionate about bringing the timeless beauty of the earth into your homes and projects.
-                        </p>
-                        <Link href="/about" passHref>
-                            <Button>Learn More About Us</Button>
-                        </Link>
-                    </div>
+            <CardContent className="p-0 relative h-80 md:h-96">
+                {aboutUsImage && (
+                    <Image 
+                        src={aboutUsImage.imageUrl} 
+                        alt="About Stone Emporium" 
+                        fill 
+                        className="object-cover"
+                        data-ai-hint={aboutUsImage.imageHint}
+                    />
+                )}
+                <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center p-8">
+                    <p className="font-body text-lg text-white max-w-2xl mb-6">
+                        Stone Emporium has been a trusted name in the natural stone industry for over two decades. We are passionate about bringing the timeless beauty of the earth into your homes and projects.
+                    </p>
+                    <Link href="/about" passHref>
+                        <Button>Learn More About Us</Button>
+                    </Link>
                 </div>
             </CardContent>
         </Card>
