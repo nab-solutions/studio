@@ -23,6 +23,24 @@
       "description": "Background image for the image hero, showing a lush green forest.",
       "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3Jlc3R8ZW58MHx8fHwxNzY4NTczNjYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "green forest"
+    },
+    {
+      "id": "category-marble",
+      "description": "Image for marble product category.",
+      "imageUrl": "https://images.unsplash.com/photo-1608501821300-4f99e58bba77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXJibGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc2ODU3MjY3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marble texture"
+    },
+    {
+      "id": "category-granite",
+      "description": "Image for granite product category.",
+      "imageUrl": "https://images.unsplash.com/photo-1575722290270-626b0208df99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxncmFuaXRlJTIwdGV4dHVyZXxlbnwwfHx8fDE3Njg1NzI2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "granite texture"
+    },
+    {
+      "id": "category-quartzite",
+      "description": "Image for quartzite product category.",
+      "imageUrl": "https://images.unsplash.com/photo-1736884721291-f688fcec1bf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxxdWFydHppdGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc2ODU3MjY3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quartzite texture"
     }
   ]
 }

@@ -4,6 +4,8 @@ import { useState, useEffect, ReactNode } from 'react';
 import ScrollExpandMedia from '@/components/blocks/scroll-expansion-hero';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
 
 const videoPoster = PlaceHolderImages.find(p => p.id === 'video-poster');
 const videoBackground = PlaceHolderImages.find(p => p.id === 'video-background');
@@ -59,6 +61,21 @@ const sampleMediaContent: MediaContentCollection = {
   },
 };
 
+const productCategories = [
+    {
+        name: 'Marble',
+        id: 'category-marble',
+    },
+    {
+        name: 'Granite',
+        id: 'category-granite',
+    },
+    {
+        name: 'Quartzite',
+        id: 'category-quartzite',
+    },
+];
+
 const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
   const currentMedia = sampleMediaContent[mediaType];
 
@@ -74,6 +91,35 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
       <p className='font-body text-lg mb-8 text-foreground'>
         {currentMedia.about.conclusion}
       </p>
+
+      <div className="mt-16">
+        <h2 className='font-headline text-3xl font-bold mb-10 text-center text-foreground'>
+          Product Categories
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {productCategories.map((category) => {
+                const placeholder = PlaceHolderImages.find(p => p.id === category.id);
+                return (
+                    <Card key={category.name} className="overflow-hidden bg-card">
+                        <CardHeader className="p-0">
+                            <div className="relative h-48 w-full">
+                                {placeholder && <Image 
+                                    src={placeholder.imageUrl} 
+                                    alt={category.name} 
+                                    fill 
+                                    style={{ objectFit: 'cover' }}
+                                    data-ai-hint={placeholder.imageHint}
+                                />}
+                            </div>
+                        </CardHeader>
+                        <CardContent className="p-4">
+                            <CardTitle className="text-xl font-headline text-card-foreground">{category.name}</CardTitle>
+                        </CardContent>
+                    </Card>
+                )
+            })}
+        </div>
+      </div>
     </div>
   );
 };
