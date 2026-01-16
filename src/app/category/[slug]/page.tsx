@@ -8,10 +8,10 @@ import { Button } from '@/components/ui/button';
 import { useParams } from 'next/navigation';
 
 const products = {
-    marble: [
-        { name: 'Carrara', id: 'variant-carrara' },
-        { name: 'Calacatta', id: 'variant-calacatta' },
-        { name: 'Statuario', id: 'variant-statuario' },
+    sandstone: [
+        { name: 'Rainbow', id: 'variant-rainbow' },
+        { name: 'Teakwood', id: 'variant-teakwood' },
+        { name: 'Mint', id: 'variant-mint' },
     ],
     granite: [
         { name: 'Black Pearl', id: 'variant-black-pearl' },

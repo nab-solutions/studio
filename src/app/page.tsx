@@ -64,8 +64,8 @@ const sampleMediaContent: MediaContentCollection = {
 
 const productCategories = [
     {
-        name: 'Marble',
-        id: 'category-marble',
+        name: 'Sandstone',
+        id: 'category-sandstone',
     },
     {
         name: 'Granite',
