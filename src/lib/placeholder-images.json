@@ -3,7 +3,7 @@
     {
       "id": "video-poster",
       "description": "Poster image for the video hero component, showing Earth from space.",
-      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGVhcnRofGVufDB8fHx8MTc2ODU3MjA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3BhY2UlMjBlYXJ0aHxlbnwwfHx8fDE3Njg1NzIwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "space earth"
     },
     {
@@ -15,32 +15,86 @@
     {
       "id": "image-src",
       "description": "Main image for the image hero component, showing a diver underwater.",
-      "imageUrl": "https://images.unsplash.com/photo-1682957205538-7ba9957b01a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx1bmRlcndhdGVyJTIwZGl2ZXJ8ZW58MHx8fHwxNzY4NTcyMDc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1622131467147-414e9c39bc36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1bmRlcndhdGVyJTIwZGl2ZXJ8ZW58MHx8fHwxNzY4NTcyMDc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "underwater diver"
     },
     {
       "id": "image-background",
       "description": "Background image for the image hero, showing a lush green forest.",
-      "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3Jlc3R8ZW58MHx8fHwxNzY4NTczNjYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599220144359-d4b723bd476d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmVlbiUyMGZvcmVzdHxlbnwwfHx8fDE3Njg0ODgxNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "green forest"
     },
     {
       "id": "category-marble",
       "description": "Image for marble product category.",
-      "imageUrl": "https://images.unsplash.com/photo-1608501821300-4f99e58bba77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXJibGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc2ODU3MjY3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXJibGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc2ODU3MjY3NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "marble texture"
     },
     {
       "id": "category-granite",
       "description": "Image for granite product category.",
-      "imageUrl": "https://images.unsplash.com/photo-1575722290270-626b0208df99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxncmFuaXRlJTIwdGV4dHVyZXxlbnwwfHx8fDE3Njg1NzI2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxncmFuaXRlJTIwdGV4dHVyZXxlbnwwfHx8fDE3Njg1NzI2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "granite texture"
     },
     {
       "id": "category-quartzite",
       "description": "Image for quartzite product category.",
-      "imageUrl": "https://images.unsplash.com/photo-1736884721291-f688fcec1bf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxxdWFydHppdGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc2ODU3MjY3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1674831309300-5a38ba6a3092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxxdWFydHppdGUlMjB0ZXh0dXJlfGVufDB8fHx8MTc2ODU3MjY3NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "quartzite texture"
+    },
+    {
+      "id": "variant-carrara",
+      "description": "Image for Carrara marble variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1596195364721-16845a713d67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJyYXJhJTIwbWFyYmxlfGVufDB8fHx8MTc2ODU3Mjg1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "carrara marble"
+    },
+    {
+      "id": "variant-calacatta",
+      "description": "Image for Calacatta marble variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1762328941988-e584e6be5cae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYWxhY2F0dGElMjBtYXJibGV8ZW58MHx8fHwxNzY4NTcyODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calacatta marble"
+    },
+    {
+      "id": "variant-statuario",
+      "description": "Image for Statuario marble variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1707279063088-0bc5537b6d29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RhdHVhcmlvJTIwbWFyYmxlfGVufDB8fHx8MTc2ODU3Mjg1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "statuario marble"
+    },
+    {
+      "id": "variant-black-pearl",
+      "description": "Image for Black Pearl granite variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibGFjayUyMGdyYW5pdGV8ZW58MHx8fHwxNzY4NTcyODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "black granite"
+    },
+    {
+      "id": "variant-ubatuba",
+      "description": "Image for Ubatuba granite variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1739388159368-59ace93ea2cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxncmVlbiUyMGdyYW5pdGV8ZW58MHx8fHwxNzY4NTcyODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green granite"
+    },
+    {
+      "id": "variant-kashmir-white",
+      "description": "Image for Kashmir White granite variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1733085097228-548654f926c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3aGl0ZSUyMGdyYW5pdGV8ZW58MHx8fHwxNzY4NTcyODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white granite"
+    },
+    {
+      "id": "variant-taj-mahal",
+      "description": "Image for Taj Mahal quartzite variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1760651691818-e13e65286d72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWlnZSUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beige quartzite"
+    },
+    {
+      "id": "variant-super-white",
+      "description": "Image for Super White quartzite variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1760651913970-98e38bd28f77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3aGl0ZSUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white quartzite"
+    },
+    {
+      "id": "variant-sea-pearl",
+      "description": "Image for Sea Pearl quartzite variant.",
+      "imageUrl": "https://images.unsplash.com/photo-1542300813-4d6f9d5758b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmVlbiUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green quartzite"
     }
   ]
 }

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const videoPoster = PlaceHolderImages.find(p => p.id === 'video-poster');
 const videoBackground = PlaceHolderImages.find(p => p.id === 'video-background');
@@ -100,22 +101,24 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
             {productCategories.map((category) => {
                 const placeholder = PlaceHolderImages.find(p => p.id === category.id);
                 return (
-                    <Card key={category.name} className="overflow-hidden bg-card">
-                        <CardHeader className="p-0">
-                            <div className="relative h-48 w-full">
-                                {placeholder && <Image 
-                                    src={placeholder.imageUrl} 
-                                    alt={category.name} 
-                                    fill 
-                                    style={{ objectFit: 'cover' }}
-                                    data-ai-hint={placeholder.imageHint}
-                                />}
-                            </div>
-                        </CardHeader>
-                        <CardContent className="p-4">
-                            <CardTitle className="text-xl font-headline text-card-foreground">{category.name}</CardTitle>
-                        </CardContent>
-                    </Card>
+                    <Link key={category.name} href={`/category/${category.name.toLowerCase()}`}>
+                        <Card className="overflow-hidden bg-card cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                            <CardHeader className="p-0">
+                                <div className="relative h-48 w-full">
+                                    {placeholder && <Image 
+                                        src={placeholder.imageUrl} 
+                                        alt={category.name} 
+                                        fill 
+                                        style={{ objectFit: 'cover' }}
+                                        data-ai-hint={placeholder.imageHint}
+                                    />}
+                                </div>
+                            </CardHeader>
+                            <CardContent className="p-4">
+                                <CardTitle className="text-xl font-headline text-card-foreground">{category.name}</CardTitle>
+                            </CardContent>
+                        </Card>
+                    </Link>
                 )
             })}
         </div>
