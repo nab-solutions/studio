@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "video-poster",
+      "description": "Poster image for the video hero component, showing Earth from space.",
+      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFjZSUyMGVhcnRofGVufDB8fHx8MTc2ODU3MjA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space earth"
+    },
+    {
+      "id": "video-background",
+      "description": "Background image for the video hero, showing a starry galaxy.",
+      "imageUrl": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYWxheHklMjBzdGFyc3xlbnwwfHx8fDE3Njg0ODc1OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "galaxy stars"
+    },
+    {
+      "id": "image-src",
+      "description": "Main image for the image hero component, showing a diver underwater.",
+      "imageUrl": "https://images.unsplash.com/photo-1682957205538-7ba9957b01a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx1bmRlcndhdGVyJTIwZGl2ZXJ8ZW58MHx8fHwxNzY4NTcyMDc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "underwater diver"
+    },
+    {
+      "id": "image-background",
+      "description": "Background image for the image hero, showing a mountain lake landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1438382458652-54431bf59e01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW91bnRhaW4lMjBsYWtlfGVufDB8fHx8MTc2ODQ3ODA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain lake"
+    }
+  ]
 }
