@@ -79,6 +79,7 @@ const productCategories = [
 
 const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
   const currentMedia = sampleMediaContent[mediaType];
+  const aboutUsImage = PlaceHolderImages.find(p => p.id === 'about-us-home');
 
   return (
     <div className='max-w-4xl mx-auto'>
@@ -122,6 +123,37 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
                 )
             })}
         </div>
+      </div>
+
+      <div className="mt-24 py-16">
+        <h2 className='font-headline text-3xl font-bold mb-10 text-center text-foreground'>
+          About Our Emporium
+        </h2>
+        <Card className="bg-card overflow-hidden">
+            <CardContent className="p-0">
+                <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+                    <div className="relative h-80 w-full">
+                        {aboutUsImage && (
+                            <Image 
+                                src={aboutUsImage.imageUrl} 
+                                alt="About Stone Emporium" 
+                                fill 
+                                className="object-cover"
+                                data-ai-hint={aboutUsImage.imageHint}
+                            />
+                        )}
+                    </div>
+                    <div className="p-8 md:p-12">
+                        <p className="font-body text-lg mb-6 text-card-foreground">
+                            Stone Emporium has been a trusted name in the natural stone industry for over two decades. We are passionate about bringing the timeless beauty of the earth into your homes and projects.
+                        </p>
+                        <Link href="/about" passHref>
+                            <Button>Learn More About Us</Button>
+                        </Link>
+                    </div>
+                </div>
+            </CardContent>
+        </Card>
       </div>
     </div>
   );

@@ -137,6 +137,24 @@
       "description": "Image for Kandla Grey sandstone.",
       "imageUrl": "https://images.unsplash.com/photo-1737034164564-5b915f64e18a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JleSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "grey sandstone"
+    },
+    {
+      "id": "about-us-home",
+      "description": "Image for the About Us section on the home page.",
+      "imageUrl": "https://images.unsplash.com/photo-1680781336783-8382d382e892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwb2ZmaWNlfGVufDB8fHx8MTc2ODU3NDM0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company office"
+    },
+    {
+      "id": "about-us-page",
+      "description": "Image for the main About Us page.",
+      "imageUrl": "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3Njg0NjgxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team meeting"
+    },
+    {
+      "id": "about-commitment",
+      "description": "Image for the About Us details page.",
+      "imageUrl": "https://images.unsplash.com/photo-1767040362163-f1b833b14ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdG9uZSUyMGNyYWZ0c21hbnNoaXB8ZW58MHx8fHwxNzY4NTc0MzQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone craftsmanship"
     }
   ]
 }
