@@ -140,7 +140,7 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
                         data-ai-hint={aboutUsImage.imageHint}
                     />
                 )}
-                <div className="absolute inset-0 bg-black/60 flex flex-col items-end justify-center text-right p-16">
+                <div className="absolute inset-0 bg-black/60 flex flex-col items-end justify-center text-right p-8 md:py-16 md:pr-16 md:pl-32">
                     <p className="font-body text-lg text-white max-w-xl mb-6">
                         Stone Emporium has been a trusted name in the natural stone industry for over two decades. We are passionate about bringing the timeless beauty of the earth into your homes and projects.
                     </p>
