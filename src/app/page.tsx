@@ -81,22 +81,27 @@ const applicationAreas = [
     {
         name: 'Building Facade',
         id: 'application-facade',
+        category: 'sandstone'
     },
     {
         name: 'Landscape',
         id: 'application-landscape',
+        category: 'sandstone'
     },
     {
         name: 'Flooring',
         id: 'application-floor',
+        category: 'sandstone'
     },
     {
         name: 'Kitchens',
         id: 'application-kitchen',
+        category: 'granite'
     },
     {
         name: 'Walls',
         id: 'application-wall',
+        category: 'sandstone'
     },
 ];
 
@@ -106,20 +111,20 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
   const aboutUsImage = PlaceHolderImages.find(p => p.id === 'about-us-home');
 
   return (
-    <div className='max-w-4xl mx-auto'>
-      <h2 className='font-headline text-3xl font-bold mb-6 text-foreground'>
+    <div className="max-w-4xl mx-auto">
+      <h2 className="font-headline text-3xl font-bold mb-6 text-foreground">
         About This Component
       </h2>
-      <p className='font-body text-lg mb-8 text-foreground'>
+      <p className="font-body text-lg mb-8 text-foreground">
         {currentMedia.about.overview}
       </p>
 
-      <p className='font-body text-lg mb-8 text-foreground'>
+      <p className="font-body text-lg mb-8 text-foreground">
         {currentMedia.about.conclusion}
       </p>
 
       <div className="mt-16">
-        <h2 className='font-headline text-3xl font-bold mb-10 text-center text-foreground'>
+        <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
           Product Categories
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -150,7 +155,7 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
       </div>
 
       <div className="mt-24 py-16">
-        <h2 className='font-headline text-3xl font-bold mb-10 text-center text-foreground'>
+        <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
           About Our Emporium
         </h2>
         <Card className="bg-card overflow-hidden">
@@ -177,30 +182,32 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
       </div>
 
       <div className="mt-24 py-16">
-        <h2 className='font-headline text-3xl font-bold mb-10 text-center text-foreground'>
+        <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
           Application Areas
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
             {applicationAreas.map((area) => {
                 const placeholder = PlaceHolderImages.find(p => p.id === area.id);
                 return (
-                    <div key={area.name} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-[3/4]">
-                        {placeholder && (
-                            <Image
-                                src={placeholder.imageUrl}
-                                alt={area.name}
-                                fill
-                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                                data-ai-hint={placeholder.imageHint}
-                            />
-                        )}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-                        <div className="absolute inset-x-0 bottom-0 p-4">
-                            <h3 className="text-xl font-headline text-white text-center">
-                                {area.name}
-                            </h3>
+                    <Link key={area.name} href={`/category/${area.category}`} passHref>
+                        <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-[3/4] cursor-pointer">
+                            {placeholder && (
+                                <Image
+                                    src={placeholder.imageUrl}
+                                    alt={area.name}
+                                    fill
+                                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                    data-ai-hint={placeholder.imageHint}
+                                />
+                            )}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                            <div className="absolute inset-x-0 bottom-0 p-4">
+                                <h3 className="text-xl font-headline text-white text-center">
+                                    {area.name}
+                                </h3>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 )
             })}
         </div>
@@ -228,8 +235,8 @@ export default function Home() {
   }
 
   return (
-    <div className='min-h-screen bg-background'>
-      <div className='fixed top-4 right-4 z-50 flex gap-2'>
+    <div className="min-h-screen bg-background">
+      <div className="fixed top-4 right-4 z-50 flex gap-2">
         <Button
           onClick={() => setMediaType('video')}
           variant={mediaType === 'video' ? 'secondary' : 'outline'}
