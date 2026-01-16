@@ -5,6 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { useParams } from 'next/navigation';
 
 const products = {
     marble: [
@@ -24,8 +25,9 @@ const products = {
     ],
 };
 
-export default function CategoryPage({ params }: { params: { slug: string } }) {
-    const category = params.slug;
+export default function CategoryPage() {
+    const params = useParams();
+    const category = params.slug as string;
     const variants = products[category as keyof typeof products] || [];
     
     return (
