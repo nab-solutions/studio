@@ -43,24 +43,6 @@
       "imageHint": "quartzite texture"
     },
     {
-      "id": "variant-rainbow",
-      "description": "Image for Rainbow Sandstone variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1525298910449-36073c651152?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyYWluYm93JTIwc2FuZHN0b25lfGVufDB8fHx8MTcxOTk2MDAyOXww&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "rainbow sandstone"
-    },
-    {
-      "id": "variant-teakwood",
-      "description": "Image for Teakwood Sandstone variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1617153675453-61a87a6021d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b29kJTIwdGV4dHVyZSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3MTk5NjAwNTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "teakwood sandstone"
-    },
-    {
-      "id": "variant-mint",
-      "description": "Image for Mint Sandstone variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1604118301322-28157e937e1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW50JTIwZ3JlZW4lMjBzYW5kc3RvbmV8ZW58MHx8fHwxNzE5OTYwMDc5fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "mint sandstone"
-    },
-    {
       "id": "variant-black-pearl",
       "description": "Image for Black Pearl granite variant.",
       "imageUrl": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibGFjayUyMGdyYW5pdGV8ZW58MHx8fHwxNzY4NTcyODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -95,6 +77,66 @@
       "description": "Image for Sea Pearl quartzite variant.",
       "imageUrl": "https://images.unsplash.com/photo-1542300813-4d6f9d5758b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmVlbiUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "green quartzite"
+    },
+    {
+      "id": "variant-dholpur-beige",
+      "description": "Image for Dholpur Beige sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1687800392043-d9fd4fbb9558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWlnZSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beige sandstone"
+    },
+    {
+      "id": "variant-jodhpur",
+      "description": "Image for Jodhpur sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1762370893038-67f1f046ec37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxqb2RocHVyJTIwc3RvbmV8ZW58MHx8fHwxNzY4NTczNjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jodhpur stone"
+    },
+    {
+      "id": "variant-basalt",
+      "description": "Image for Basalt stone.",
+      "imageUrl": "https://images.unsplash.com/photo-1652047239861-4c8d5f53efaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYXNhbHQlMjByb2NrfGVufDB8fHx8MTc2ODU3MzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "basalt rock"
+    },
+    {
+      "id": "variant-autumn-brown",
+      "description": "Image for Autumn Brown sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1691337976804-16de6820f40c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicm93biUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brown sandstone"
+    },
+    {
+      "id": "variant-teakwood-yellow",
+      "description": "Image for Teakwood Yellow sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1687800289759-4f9b23b1eebc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5ZWxsb3clMjBzYW5kc3RvbmV8ZW58MHx8fHwxNzY4NTczNjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yellow sandstone"
+    },
+    {
+      "id": "variant-teakwood-beige",
+      "description": "Image for Teakwood Beige sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1687800410096-7d11edf87af2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiZWlnZSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beige sandstone"
+    },
+    {
+      "id": "variant-indian-mocha",
+      "description": "Image for Indian Mocha sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1733109069611-ac845c43db24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxicm93biUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brown sandstone"
+    },
+    {
+      "id": "variant-gwalior-mint",
+      "description": "Image for Gwalior Mint sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1710241426974-f64b42dd692d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaW50JTIwc2FuZHN0b25lfGVufDB8fHx8MTc2ODU3MzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mint sandstone"
+    },
+    {
+      "id": "variant-sagar-black",
+      "description": "Image for Sagar Black sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1522032183912-b0363624909d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibGFjayUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "black sandstone"
+    },
+    {
+      "id": "variant-kandla-grey",
+      "description": "Image for Kandla Grey sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1737034164564-5b915f64e18a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JleSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grey sandstone"
     }
   ]
 }

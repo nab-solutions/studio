@@ -8,19 +8,26 @@ import { useParams } from 'next/navigation';
 
 const products = {
     sandstone: [
-        { name: 'Rainbow', id: 'variant-rainbow' },
-        { name: 'Teakwood', id: 'variant-teakwood' },
-        { name: 'Mint', id: 'variant-mint' },
+        { name: 'Dholpur Beige', id: 'variant-dholpur-beige', application: 'Floor/Wall' },
+        { name: 'Jodhpur', id: 'variant-jodhpur', application: 'Walls' },
+        { name: 'Basalt', id: 'variant-basalt', application: 'Floor/Wall' },
+        { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
+        { name: 'Teakwood Yellow', id: 'variant-teakwood-yellow', application: 'Wall' },
+        { name: 'Teakwood Beige', id: 'variant-teakwood-beige', application: 'Wall' },
+        { name: 'Indian Mocha', id: 'variant-indian-mocha', application: 'Wall' },
+        { name: 'Gwalior Mint', id: 'variant-gwalior-mint', application: 'Wall' },
+        { name: 'Sagar Black', id: 'variant-sagar-black', application: 'Wall/Floor' },
+        { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
     ],
     granite: [
-        { name: 'Black Pearl', id: 'variant-black-pearl' },
-        { name: 'Ubatuba', id: 'variant-ubatuba' },
-        { name: 'Kashmir White', id: 'variant-kashmir-white' },
+        { name: 'Black Pearl', id: 'variant-black-pearl', application: 'Countertops' },
+        { name: 'Ubatuba', id: 'variant-ubatuba', application: 'Countertops' },
+        { name: 'Kashmir White', id: 'variant-kashmir-white', application: 'Countertops' },
     ],
     quartzite: [
-        { name: 'Taj Mahal', id: 'variant-taj-mahal' },
-        { name: 'Super White', id: 'variant-super-white' },
-        { name: 'Sea Pearl', id: 'variant-sea-pearl' },
+        { name: 'Taj Mahal', id: 'variant-taj-mahal', application: 'Countertops' },
+        { name: 'Super White', id: 'variant-super-white', application: 'Countertops' },
+        { name: 'Sea Pearl', id: 'variant-sea-pearl', application: 'Countertops' },
     ],
 };
 
@@ -77,6 +84,11 @@ export default function CategoryPage() {
                                     <h3 className="text-xl font-headline text-white transform-gpu translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
                                         {variant.name}
                                     </h3>
+                                    {variant.application && (
+                                        <p className="text-sm text-gray-200 transform-gpu translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out delay-100">
+                                            {variant.application}
+                                        </p>
+                                    )}
                                 </div>
                             </div>
                         )
