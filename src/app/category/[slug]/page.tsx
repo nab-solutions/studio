@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useParams } from 'next/navigation';
+import { useState } from 'react';
 
 const products = {
     sandstone: [
@@ -36,6 +37,16 @@ export default function CategoryPage() {
     const category = params.slug as string;
     const variants = products[category as keyof typeof products] || [];
     const categoryImage = PlaceHolderImages.find(p => p.id === `category-${category}`);
+
+    const [selectedApplication, setSelectedApplication] = useState('All');
+
+    const allApplications = variants.flatMap(v => v.application.split('/'));
+    const uniqueApplications = ['All', ...Array.from(new Set(allApplications))];
+
+    const filteredVariants = variants.filter(variant => {
+        if (selectedApplication === 'All') return true;
+        return variant.application.split('/').includes(selectedApplication);
+    });
     
     return (
         <div className="min-h-screen bg-background text-foreground">
@@ -64,36 +75,55 @@ export default function CategoryPage() {
             </div>
             
             <div className="container mx-auto py-16 px-4">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    {variants.map((variant) => {
-                        const placeholder = PlaceHolderImages.find(p => p.id === variant.id);
-                        return (
-                            <div key={variant.name} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                                <div className="aspect-[3/4] relative">
-                                    {placeholder && (
-                                        <Image
-                                            src={placeholder.imageUrl}
-                                            alt={variant.name}
-                                            fill
-                                            className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                                            data-ai-hint={placeholder.imageHint}
-                                        />
-                                    )}
-                                </div>
-                                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-                                    <h3 className="text-xl font-headline text-white transform-gpu translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
-                                        {variant.name}
-                                    </h3>
-                                    {variant.application && (
-                                        <p className="text-sm text-gray-200 transform-gpu translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out delay-100">
-                                            {variant.application}
-                                        </p>
-                                    )}
-                                </div>
-                            </div>
-                        )
-                    })}
+                <div className="flex flex-wrap justify-center gap-2 mb-12">
+                    {uniqueApplications.map(app => (
+                        <Button 
+                            key={app} 
+                            variant={selectedApplication === app ? 'default' : 'outline'}
+                            onClick={() => setSelectedApplication(app)}
+                            className="capitalize"
+                        >
+                            {app}
+                        </Button>
+                    ))}
                 </div>
+
+                {filteredVariants.length > 0 ? (
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        {filteredVariants.map((variant) => {
+                            const placeholder = PlaceHolderImages.find(p => p.id === variant.id);
+                            return (
+                                <div key={variant.name} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                                    <div className="aspect-[3/4] relative">
+                                        {placeholder && (
+                                            <Image
+                                                src={placeholder.imageUrl}
+                                                alt={variant.name}
+                                                fill
+                                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                                data-ai-hint={placeholder.imageHint}
+                                            />
+                                        )}
+                                    </div>
+                                    <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                                        <h3 className="text-xl font-headline text-white transform-gpu translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                                            {variant.name}
+                                        </h3>
+                                        {variant.application && (
+                                            <p className="text-sm text-gray-200 transform-gpu translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-in-out delay-100">
+                                                {variant.application}
+                                            </p>
+                                        )}
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                ) : (
+                    <div className="text-center py-16">
+                        <p className="text-lg text-muted-foreground">No products found for this application.</p>
+                    </div>
+                )}
             </div>
         </div>
     );
