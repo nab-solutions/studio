@@ -28,14 +28,32 @@ export default function CategoryPage() {
     const params = useParams();
     const category = params.slug as string;
     const variants = products[category as keyof typeof products] || [];
+    const categoryImage = PlaceHolderImages.find(p => p.id === `category-${category}`);
     
     return (
         <div className="min-h-screen bg-background text-foreground">
-            <div className="w-full bg-card py-20 text-center border-b">
-                <h1 className="text-5xl font-headline capitalize text-card-foreground">{category}</h1>
-                <Link href="/" passHref>
-                    <Button variant="link" className="mt-4 text-primary hover:text-primary/80">Back to Home</Button>
-                </Link>
+            <div className="w-full bg-card border-b">
+                <div className="container mx-auto py-12 px-4">
+                    <div className="flex justify-between items-center gap-8">
+                        <div>
+                            <h1 className="text-5xl font-headline capitalize text-card-foreground">{category}</h1>
+                            <Link href="/" passHref>
+                                <Button variant="link" className="mt-2 pl-0 text-primary hover:text-primary/80">Back to Home</Button>
+                            </Link>
+                        </div>
+                        {categoryImage && (
+                             <div className="w-48 h-32 relative rounded-lg overflow-hidden shadow-md hidden md:block">
+                                <Image
+                                    src={categoryImage.imageUrl}
+                                    alt={category}
+                                    fill
+                                    className="object-cover"
+                                    data-ai-hint={categoryImage.imageHint}
+                                />
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
             
             <div className="container mx-auto py-16 px-4">
