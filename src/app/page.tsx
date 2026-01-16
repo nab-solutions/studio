@@ -77,6 +77,30 @@ const productCategories = [
     },
 ];
 
+const applicationAreas = [
+    {
+        name: 'Building Facade',
+        id: 'application-facade',
+    },
+    {
+        name: 'Landscape',
+        id: 'application-landscape',
+    },
+    {
+        name: 'Flooring',
+        id: 'application-floor',
+    },
+    {
+        name: 'Kitchens',
+        id: 'application-kitchen',
+    },
+    {
+        name: 'Walls',
+        id: 'application-wall',
+    },
+];
+
+
 const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
   const currentMedia = sampleMediaContent[mediaType];
   const aboutUsImage = PlaceHolderImages.find(p => p.id === 'about-us-home');
@@ -150,6 +174,36 @@ const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
                 </div>
             </CardContent>
         </Card>
+      </div>
+
+      <div className="mt-24 py-16">
+        <h2 className='font-headline text-3xl font-bold mb-10 text-center text-foreground'>
+          Application Areas
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+            {applicationAreas.map((area) => {
+                const placeholder = PlaceHolderImages.find(p => p.id === area.id);
+                return (
+                    <div key={area.name} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-[3/4]">
+                        {placeholder && (
+                            <Image
+                                src={placeholder.imageUrl}
+                                alt={area.name}
+                                fill
+                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                data-ai-hint={placeholder.imageHint}
+                            />
+                        )}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <div className="absolute inset-x-0 bottom-0 p-4">
+                            <h3 className="text-xl font-headline text-white text-center">
+                                {area.name}
+                            </h3>
+                        </div>
+                    </div>
+                )
+            })}
+        </div>
       </div>
     </div>
   );

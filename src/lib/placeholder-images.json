@@ -155,6 +155,36 @@
       "description": "Image for the About Us details page.",
       "imageUrl": "https://images.unsplash.com/photo-1767040362163-f1b833b14ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdG9uZSUyMGNyYWZ0c21hbnNoaXB8ZW58MHx8fHwxNzY4NTc0MzQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stone craftsmanship"
+    },
+    {
+      "id": "application-facade",
+      "description": "Image for building facade application.",
+      "imageUrl": "https://images.unsplash.com/photo-1582501319769-9da8a5b7b112?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGZhY2FkZXxlbnwwfHx8fDE3Njg5MDUyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "building facade"
+    },
+    {
+      "id": "application-landscape",
+      "description": "Image for landscape application.",
+      "imageUrl": "https://images.unsplash.com/photo-1545185913-92c431414168?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYW5kc2NhcGV8ZW58MHx8fHwxNzY4OTA1Mjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "landscape design"
+    },
+    {
+      "id": "application-floor",
+      "description": "Image for flooring application.",
+      "imageUrl": "https://images.unsplash.com/photo-1617088195842-9271a436e8a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbG9vciUyMHN0b25lfGVufDB8fHx8MTc2ODkwNTMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone flooring"
+    },
+    {
+      "id": "application-kitchen",
+      "description": "Image for kitchen application.",
+      "imageUrl": "https://images.unsplash.com/photo-1600585152220-0c6e542e3957?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc2ODkwNTM1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen countertop"
+    },
+    {
+      "id": "application-wall",
+      "description": "Image for wall application.",
+      "imageUrl": "https://images.unsplash.com/photo-1522075598688-a421d0a51415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHdhbGx8ZW58MHx8fHwxNzY4OTA1MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone wall"
     }
   ]
 }
