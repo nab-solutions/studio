@@ -34,7 +34,7 @@ const sampleMediaContent: MediaContentCollection = {
     src: 'https://videos.pexels.com/video-files/4434246/4434246-hd_1920_1080_25fps.mp4',
     poster: videoPoster?.imageUrl,
     background: videoBackground?.imageUrl || '',
-    title: 'Immersive Video Experience',
+    title: 'Stone Video Experience',
     date: 'Cosmic Journey',
     scrollToExpand: 'Scroll to Expand',
     about: {
