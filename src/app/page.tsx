@@ -285,32 +285,35 @@ const Content = () => {
                 const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
                 const Icon = advantage.icon;
                 return (
-                    <div key={advantage.title} className="group relative rounded-lg overflow-hidden shadow-lg aspect-[3/4]">
-                        {placeholder && (
-                            <Image
-                                src={placeholder.imageUrl}
-                                alt={advantage.title}
-                                fill
-                                className="object-cover"
-                                data-ai-hint={placeholder.imageHint}
-                            />
-                        )}
-                        <div className="absolute inset-0 bg-black/60"></div>
-                        <div className="relative flex flex-col items-center justify-center text-center h-full p-6 text-white absolute inset-0">
-                            <Icon className="w-12 h-12 mb-4" />
-                            <h3 className="text-xl font-headline font-bold">{advantage.title}</h3>
-                            <p className="text-sm font-body mt-2 px-2">
+                    <Card key={advantage.title} className="group overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <CardHeader className="p-0">
+                            <div className="relative aspect-video">
+                                {placeholder && (
+                                    <Image
+                                        src={placeholder.imageUrl}
+                                        alt={advantage.title}
+                                        fill
+                                        className="object-cover"
+                                        data-ai-hint={placeholder.imageHint}
+                                    />
+                                )}
+                            </div>
+                        </CardHeader>
+                        <CardContent className="p-6 text-center">
+                            <Icon className="w-12 h-12 mb-4 mx-auto text-primary" />
+                            <h3 className="text-xl font-headline font-bold text-card-foreground">{advantage.title}</h3>
+                            <p className="text-sm font-body mt-2 text-muted-foreground">
                                 {advantage.description}
                             </p>
-                        </div>
-                    </div>
+                        </CardContent>
+                    </Card>
                 );
             })}
         </div>
     </div>
 
       <div className="mt-24 py-16">
-        <div className="relative h-[600px] w-full text-white rounded-lg overflow-hidden shadow-xl">
+        <div className="relative h-[80vh] md:h-[600px] w-full text-white rounded-lg overflow-hidden shadow-xl">
             {selectedImage && (
                 <Image
                     src={selectedImage.imageUrl}
@@ -370,7 +373,7 @@ const Content = () => {
           Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
         </p>
         <div className="w-full">
-          <div className="max-w-5xl mx-auto flex flex-nowrap items-center justify-center gap-x-8 bg-transparent w-full mb-8 overflow-x-auto pb-2">
+          <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:gap-x-8 bg-transparent w-full mb-8 pb-2">
             {qualitySteps.map((step) => (
               <button
                 key={step.id}
