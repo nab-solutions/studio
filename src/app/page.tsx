@@ -187,7 +187,7 @@ const Content = () => {
             <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
                 Our Advantage
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-4 gap-8">
                 {advantages.map((advantage) => {
                     const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
                     const Icon = advantage.icon;
