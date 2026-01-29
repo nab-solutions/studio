@@ -13,11 +13,6 @@ const videoBackground = PlaceHolderImages.find(p => p.id === 'video-background')
 const imageSrc = PlaceHolderImages.find(p => p.id === 'image-src');
 const imageBackground = PlaceHolderImages.find(p => p.id === 'image-background');
 
-interface MediaAbout {
-  overview: string;
-  conclusion: string;
-}
-
 interface MediaContentData {
   src: string;
   poster?: string;
@@ -25,7 +20,6 @@ interface MediaContentData {
   title: string;
   date: string;
   scrollToExpand: string;
-  about: MediaAbout;
 }
 
 interface MediaContentCollection {
@@ -40,12 +34,6 @@ const sampleMediaContent: MediaContentCollection = {
     title: 'Stone Emporium',
     date: 'Cosmic Journey',
     scrollToExpand: 'Scroll to Expand',
-    about: {
-      overview:
-        'This is a demonstration of the ScrollExpandMedia component with a video. As you scroll, the video expands to fill more of the screen, creating an immersive experience. This component is perfect for showcasing video content in a modern, interactive way.',
-      conclusion:
-        'The ScrollExpandMedia component provides a unique way to engage users with your content through interactive scrolling. Try switching between video and image modes to see different implementations.',
-    },
   },
   image: {
     src: imageSrc?.imageUrl || '',
@@ -53,12 +41,6 @@ const sampleMediaContent: MediaContentCollection = {
     title: 'Dynamic Image Showcase',
     date: 'Aqueous Adventure',
     scrollToExpand: 'Scroll to Expand',
-    about: {
-      overview:
-        'This is a demonstration of the ScrollExpandMedia component with an image. The same smooth expansion effect works beautifully with static images, allowing you to create engaging visual experiences without video content.',
-      conclusion:
-        'The ScrollExpandMedia component works equally well with images and videos. This flexibility allows you to choose the media type that best suits your content while maintaining the same engaging user experience.',
-    },
   },
 };
 
@@ -106,24 +88,12 @@ const applicationAreas = [
 ];
 
 
-const Content = ({ mediaType }: { mediaType: 'video' | 'image' }) => {
-  const currentMedia = sampleMediaContent[mediaType];
+const Content = () => {
   const aboutUsImage = PlaceHolderImages.find(p => p.id === 'about-us-home');
 
   return (
     <div className="max-w-4xl mx-auto">
-      <h2 className="font-headline text-3xl font-bold mb-6 text-foreground">
-        About This Component
-      </h2>
-      <p className="font-body text-lg mb-8 text-foreground">
-        {currentMedia.about.overview}
-      </p>
-
-      <p className="font-body text-lg mb-8 text-foreground">
-        {currentMedia.about.conclusion}
-      </p>
-
-      <div className="mt-16">
+      <div>
         <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
           Product Categories
         </h2>
@@ -265,7 +235,7 @@ export default function Home() {
         scrollToExpand={currentMedia.scrollToExpand}
         textBlend
       >
-        <Content mediaType={mediaType} />
+        <Content />
       </ScrollExpandMedia>
     </div>
   );
