@@ -215,6 +215,162 @@
       "description": "Image for stairs application.",
       "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHN0YWlyY2FzZXxlbnwwfHx8fDE3MTk5OTkwNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stone staircase"
+    },
+    {
+      "id": "gallery-facade-sandstone-1",
+      "description": "Image of a building facade with sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1635602678578-ab6b6f99daab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYW5kc3RvbmUlMjBmYWNhZGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sandstone facade"
+    },
+    {
+      "id": "gallery-facade-sandstone-2",
+      "description": "Image of a modern building with sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1665402295475-21a4096091e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBzYW5kc3RvbmV8ZW58MHx8fHwxNzY5Njg0MDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern sandstone"
+    },
+    {
+      "id": "gallery-facade-granite-1",
+      "description": "Image of a building facade with granite.",
+      "imageUrl": "https://images.unsplash.com/photo-1667754187232-7e42240f6edd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmFuaXRlJTIwZmFjYWRlfGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "granite facade"
+    },
+    {
+      "id": "gallery-facade-granite-2",
+      "description": "Image of a polished granite building exterior.",
+      "imageUrl": "https://images.unsplash.com/photo-1527035757893-10e604670b78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb2xpc2hlZCUyMGdyYW5pdGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "polished granite"
+    },
+    {
+      "id": "gallery-facade-marble-1",
+      "description": "Image of a building facade with marble.",
+      "imageUrl": "https://images.unsplash.com/photo-1764511264860-f8308f9d2264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXJibGUlMjBmYWNhZGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marble facade"
+    },
+    {
+      "id": "gallery-facade-marble-2",
+      "description": "Image of a classic building with marble.",
+      "imageUrl": "https://images.unsplash.com/photo-1767554261805-95185e9ecf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2xhc3NpYyUyMG1hcmJsZXxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classic marble"
+    },
+    {
+      "id": "gallery-garden-sandstone-1",
+      "description": "Image of a garden path with sandstone.",
+      "imageUrl": "https://images.unsplash.com/photo-1718044649900-b20730806c61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzYW5kc3RvbmUlMjBwYXRofGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sandstone path"
+    },
+    {
+      "id": "gallery-garden-sandstone-2",
+      "description": "Image of sandstone in a garden landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1660232370139-d38f527522fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnYXJkZW4lMjBzdG9uZXxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garden stone"
+    },
+    {
+      "id": "gallery-garden-slate-1",
+      "description": "Image of a garden path with slate.",
+      "imageUrl": "https://images.unsplash.com/photo-1600410687119-2abee258c913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbGF0ZSUyMHBhdGh8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "slate path"
+    },
+    {
+      "id": "gallery-garden-slate-2",
+      "description": "Image of slate in a garden landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1680026548022-e76f693d0a62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXJrJTIwc3RvbmV8ZW58MHx8fHwxNzY5Njg0MDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dark stone"
+    },
+    {
+      "id": "gallery-outdoor-sandstone-1",
+      "description": "Image of an outdoor floor with sandstone.",
+      "imageUrl": "https://picsum.photos/seed/goss1/800/600",
+      "imageHint": "sandstone patio"
+    },
+    {
+      "id": "gallery-outdoor-sandstone-2",
+      "description": "Image of a sandstone pool deck.",
+      "imageUrl": "https://images.unsplash.com/photo-1602774895312-f002b8f2f33b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb29sJTIwZGVja3xlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pool deck"
+    },
+    {
+      "id": "gallery-outdoor-granite-1",
+      "description": "Image of an outdoor floor with granite.",
+      "imageUrl": "https://images.unsplash.com/photo-1604762537282-b64715e17b6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncmFuaXRlJTIwcGF2aW5nfGVufDB8fHx8MTc2OTY4NDAwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "granite paving"
+    },
+    {
+      "id": "gallery-outdoor-granite-2",
+      "description": "Image of outdoor granite flooring.",
+      "imageUrl": "https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b3V0ZG9vciUyMGdyYW5pdGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "outdoor granite"
+    },
+    {
+      "id": "gallery-indoor-wall-marble-1",
+      "description": "Image of an indoor wall with marble.",
+      "imageUrl": "https://images.unsplash.com/photo-1656147173067-2022b4ab3cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFyYmxlJTIwd2FsbHxlbnwwfHx8fDE3Njk1ODI0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marble wall"
+    },
+    {
+      "id": "gallery-indoor-wall-marble-2",
+      "description": "Image of a luxury interior with a marble wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjBpbnRlcmlvcnxlbnwwfHx8fDE3Njk2NTc1MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury interior"
+    },
+    {
+      "id": "gallery-indoor-wall-quartzite-1",
+      "description": "Image of an indoor wall with quartzite.",
+      "imageUrl": "https://images.unsplash.com/photo-1710580889895-1cc86427be65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxxdWFydHppdGUlMjB3YWxsfGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "quartzite wall"
+    },
+    {
+      "id": "gallery-indoor-wall-quartzite-2",
+      "description": "Image of a quartzite accent wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1632210826643-9ff7e84be2f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NlbnQlMjB3YWxsfGVufDB8fHx8MTc2OTY4NDAwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "accent wall"
+    },
+    {
+      "id": "gallery-indoor-floor-marble-1",
+      "description": "Image of an indoor floor with marble.",
+      "imageUrl": "https://images.unsplash.com/photo-1591899916510-d8eea9eb7b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXJibGUlMjBmbG9vcnxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marble floor"
+    },
+    {
+      "id": "gallery-indoor-floor-marble-2",
+      "description": "Image of a polished marble floor.",
+      "imageUrl": "https://images.unsplash.com/photo-1739272135743-09de13555560?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb2xpc2hlZCUyMG1hcmJsZXxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "polished marble"
+    },
+    {
+      "id": "gallery-indoor-floor-granite-1",
+      "description": "Image of an indoor floor with granite.",
+      "imageUrl": "https://images.unsplash.com/photo-1647439771408-8a9957477438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmFuaXRlJTIwZmxvb3J8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "granite floor"
+    },
+    {
+      "id": "gallery-indoor-floor-granite-2",
+      "description": "Image of a dark granite floor.",
+      "imageUrl": "https://images.unsplash.com/photo-1643763630190-ed48b2ab44a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXJrJTIwZmxvb3J8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dark floor"
+    },
+    {
+      "id": "gallery-stairs-granite-1",
+      "description": "Image of stairs made of granite.",
+      "imageUrl": "https://images.unsplash.com/photo-1760364195866-f28adab2cb7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxncmFuaXRlJTIwc3RhaXJzfGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "granite stairs"
+    },
+    {
+      "id": "gallery-stairs-granite-2",
+      "description": "Image of granite steps.",
+      "imageUrl": "https://images.unsplash.com/photo-1618594521473-2cd393676f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdG9uZSUyMHN0ZXBzfGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone steps"
+    },
+    {
+      "id": "gallery-stairs-marble-1",
+      "description": "Image of stairs made of marble.",
+      "imageUrl": "https://images.unsplash.com/photo-1723941083651-11c3eea434ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYXJibGUlMjBzdGFpcmNhc2V8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marble staircase"
+    },
+    {
+      "id": "gallery-stairs-marble-2",
+      "description": "Image of elegant marble stairs.",
+      "imageUrl": "https://images.unsplash.com/photo-1719956492724-7d77c42e8672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwc3RhaXJzfGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "elegant stairs"
     }
   ]
 }
