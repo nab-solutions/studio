@@ -9,6 +9,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Factory, CircleDollarSign, ShieldCheck, Ship } from 'lucide-react';
 
+const facts = [
+    { value: '2001', label: 'Establishment time' },
+    { value: '40,000+', label: 'Factory Area (m²)' },
+    { value: '50+', label: 'The amount of the transaction' },
+    { value: '2000+', label: 'Daily Production (m²)' },
+];
+
 const videoPoster = PlaceHolderImages.find(p => p.id === 'video-poster');
 const videoBackground = PlaceHolderImages.find(p => p.id === 'video-background');
 const imageSrc = PlaceHolderImages.find(p => p.id === 'image-src');
@@ -181,6 +188,16 @@ const Content = () => {
                 </div>
             </CardContent>
         </Card>
+        <div className="mt-20">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 text-center">
+                {facts.map((fact) => (
+                    <div key={fact.label}>
+                        <h3 className="text-5xl font-headline text-foreground">{fact.value}</h3>
+                        <p className="mt-2 text-sm text-muted-foreground">{fact.label}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
       </div>
 
       <div className="mt-24 py-16">
