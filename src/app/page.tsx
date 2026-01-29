@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { motion } from 'framer-motion';
 
 const facts = [
     { value: '2001', label: 'Establishment time' },
@@ -201,6 +201,10 @@ const Content = () => {
       imageHint: 'delivery truck'
     },
 ];
+
+  const [activeQualityStepId, setActiveQualityStepId] = useState(qualitySteps[0].id);
+  const activeQualityStep = qualitySteps.find((step) => step.id === activeQualityStepId);
+  const activeQualityStepImage = PlaceHolderImages.find((p) => p.id === activeQualityStep?.imageId);
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -403,42 +407,48 @@ const Content = () => {
         <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
           Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
         </p>
-        <Tabs defaultValue="sourcing" className="w-full">
-          <TabsList className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-4 bg-transparent w-full mb-8">
+        <div className="w-full">
+          <div className="max-w-5xl mx-auto flex flex-nowrap items-center justify-center gap-x-8 bg-transparent w-full mb-8 overflow-x-auto pb-2">
             {qualitySteps.map((step) => (
-              <TabsTrigger
+              <button
                 key={step.id}
-                value={step.id}
-                className="text-muted-foreground uppercase tracking-widest text-sm data-[state=active]:text-foreground data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
+                onMouseEnter={() => setActiveQualityStepId(step.id)}
+                className={cn(
+                  "text-muted-foreground uppercase tracking-widest text-sm whitespace-nowrap py-2 border-b-2 transition-colors",
+                  activeQualityStepId === step.id ? "border-primary text-foreground" : "border-transparent"
+                )}
               >
                 {step.title}
-              </TabsTrigger>
+              </button>
             ))}
-          </TabsList>
-          {qualitySteps.map((step) => {
-            const image = PlaceHolderImages.find((p) => p.id === step.imageId);
-            return (
-              <TabsContent key={step.id} value={step.id} className="mt-12">
+          </div>
+          <motion.div
+            key={activeQualityStepId}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, ease: 'easeOut' }}
+            className="mt-12"
+          >
+            {activeQualityStep && (
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center max-w-6xl mx-auto">
                   <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg md:col-span-3">
-                    {image && (
+                    {activeQualityStepImage && (
                       <Image
-                        src={image.imageUrl}
-                        alt={step.title}
+                        src={activeQualityStepImage.imageUrl}
+                        alt={activeQualityStep.title}
                         fill
                         className="object-cover"
-                        data-ai-hint={image.imageHint}
+                        data-ai-hint={activeQualityStepImage.imageHint}
                       />
                     )}
                   </div>
                   <div className="md:col-span-2">
-                    <p className="text-lg text-muted-foreground">{step.description}</p>
+                    <p className="text-lg text-muted-foreground">{activeQualityStep.description}</p>
                   </div>
                 </div>
-              </TabsContent>
-            );
-          })}
-        </Tabs>
+            )}
+          </motion.div>
+        </div>
       </div>
 
     </div>
