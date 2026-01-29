@@ -110,15 +110,14 @@ const advantages = [
       id: 'advantage-quality-assurance',
       imageHint: 'stone inspection'
     },
+    {
+      icon: Ship,
+      title: 'Logistics & Services',
+      description: 'Mature foreign trade team, proficient in international transportation customs declaration, one-stop efficient export service.',
+      id: 'advantage-logistics',
+      imageHint: 'cargo ship'
+    },
 ];
-
-const logisticsAdvantage = {
-    icon: Ship,
-    title: 'Logistics & Services',
-    description: 'Mature foreign trade team, proficient in international transportation customs declaration, one-stop efficient export service.',
-    id: 'advantage-logistics',
-    imageHint: 'cargo ship'
-};
 
 
 const Content = () => {
@@ -188,57 +187,30 @@ const Content = () => {
             <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
                 Our Advantage
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-stretch">
-                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8">
-                    {advantages.map((advantage) => {
-                        const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
-                        const Icon = advantage.icon;
-                        return (
-                            <div key={advantage.title} className="group relative overflow-hidden rounded-lg shadow-xl aspect-[3/4]">
-                                {placeholder && (
-                                    <Image
-                                        src={placeholder.imageUrl}
-                                        alt={advantage.title}
-                                        fill
-                                        className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                                        data-ai-hint={placeholder.imageHint}
-                                    />
-                                )}
-                                <div className="absolute inset-0 bg-black/60"></div>
-                                <div className="relative flex flex-col items-center justify-center text-center h-full p-4 md:p-6 text-white">
-                                    <Icon className="w-10 h-10 md:w-12 md:h-12 mb-4" />
-                                    <h3 className="text-lg md:text-xl font-headline font-bold mb-2">{advantage.title}</h3>
-                                    <p className="text-xs md:text-sm font-body">{advantage.description}</p>
-                                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {advantages.map((advantage) => {
+                    const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
+                    const Icon = advantage.icon;
+                    return (
+                        <div key={advantage.title} className="group relative overflow-hidden rounded-lg shadow-xl aspect-[3/4]">
+                            {placeholder && (
+                                <Image
+                                    src={placeholder.imageUrl}
+                                    alt={advantage.title}
+                                    fill
+                                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                                    data-ai-hint={placeholder.imageHint}
+                                />
+                            )}
+                            <div className="absolute inset-0 bg-black/60"></div>
+                            <div className="relative flex flex-col items-center justify-center text-center h-full p-4 md:p-6 text-white">
+                                <Icon className="w-10 h-10 md:w-12 md:h-12 mb-4" />
+                                <h3 className="text-lg md:text-xl font-headline font-bold mb-2">{advantage.title}</h3>
+                                <p className="text-xs md:text-sm font-body">{advantage.description}</p>
                             </div>
-                        );
-                    })}
-                </div>
-                <div className="lg:col-span-2">
-                    {(() => {
-                        const placeholder = PlaceHolderImages.find(p => p.id === logisticsAdvantage.id);
-                        const Icon = logisticsAdvantage.icon;
-                        return (
-                            <div className="group relative overflow-hidden rounded-lg shadow-xl h-full min-h-[300px] lg:aspect-auto aspect-[3/4]">
-                                {placeholder && (
-                                    <Image
-                                        src={placeholder.imageUrl}
-                                        alt={logisticsAdvantage.title}
-                                        fill
-                                        className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                                        data-ai-hint={placeholder.imageHint}
-                                    />
-                                )}
-                                <div className="absolute inset-0 bg-accent/80"></div>
-                                <div className="relative flex flex-col items-center justify-center text-center h-full p-6 text-accent-foreground">
-                                    <Icon className="w-14 h-14 md:w-16 md:h-16 mb-4" />
-                                    <h3 className="text-xl md:text-2xl font-headline font-bold mb-2">{logisticsAdvantage.title}</h3>
-                                    <p className="text-sm md:text-base font-body max-w-xs">{logisticsAdvantage.description}</p>
-                                </div>
-                            </div>
-                        );
-                    })()}
-                </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
 
