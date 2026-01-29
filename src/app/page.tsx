@@ -280,50 +280,12 @@ const Content = () => {
         <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
             Our Advantage
         </h2>
-        
-        {/* Desktop View */}
-        <div className="hidden md:flex w-full h-[450px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {advantages.map((advantage) => {
                 const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
                 const Icon = advantage.icon;
                 return (
-                    <div 
-                        key={advantage.title} 
-                        className="group relative flex-1 transition-all duration-500 ease-in-out hover:flex-grow-[3] overflow-hidden cursor-pointer first:rounded-l-lg last:rounded-r-lg"
-                    >
-                        {placeholder && (
-                            <Image
-                                src={placeholder.imageUrl}
-                                alt={advantage.title}
-                                fill
-                                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                                data-ai-hint={placeholder.imageHint}
-                            />
-                        )}
-                        <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-500"></div>
-                        <div className="relative flex flex-col items-center justify-center text-center h-full p-4 text-white overflow-hidden">
-                            <div className="flex flex-col items-center justify-center w-full transition-all duration-500 group-hover:justify-start group-hover:pt-8">
-                                <Icon className="w-10 h-10 md:w-12 md:h-12 mb-4 transition-transform duration-500" />
-                                <h3 className="text-lg md:text-xl font-headline font-bold text-center">{advantage.title}</h3>
-                                <div className="w-full h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 group-hover:mt-4 transition-all duration-500 delay-200">
-                                    <p className="text-xs md:text-sm font-body px-2">
-                                        {advantage.description}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                );
-            })}
-        </div>
-
-        {/* Mobile View */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:hidden">
-            {advantages.map((advantage) => {
-                const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
-                const Icon = advantage.icon;
-                return (
-                    <div key={advantage.title} className="group relative rounded-lg overflow-hidden shadow-lg">
+                    <div key={advantage.title} className="group relative rounded-lg overflow-hidden shadow-lg aspect-[3/4]">
                         {placeholder && (
                             <Image
                                 src={placeholder.imageUrl}
@@ -334,7 +296,7 @@ const Content = () => {
                             />
                         )}
                         <div className="absolute inset-0 bg-black/60"></div>
-                        <div className="relative flex flex-col items-center justify-center text-center h-full p-6 text-white min-h-[300px]">
+                        <div className="relative flex flex-col items-center justify-center text-center h-full p-6 text-white absolute inset-0">
                             <Icon className="w-12 h-12 mb-4" />
                             <h3 className="text-xl font-headline font-bold">{advantage.title}</h3>
                             <p className="text-sm font-body mt-2 px-2">
@@ -413,6 +375,7 @@ const Content = () => {
               <button
                 key={step.id}
                 onMouseEnter={() => setActiveQualityStepId(step.id)}
+                onClick={() => setActiveQualityStepId(step.id)}
                 className={cn(
                   "text-muted-foreground uppercase tracking-widest text-sm whitespace-nowrap py-2 border-b-2 transition-colors",
                   activeQualityStepId === step.id ? "border-primary text-foreground" : "border-transparent"

@@ -135,8 +135,8 @@ export default function ApplicationPage() {
                                         </CarouselItem>
                                     ))}
                                 </CarouselContent>
-                                <CarouselPrevious className="ml-12" />
-                                <CarouselNext className="mr-12" />
+                                <CarouselPrevious className="left-4 sm:-left-12" />
+                                <CarouselNext className="right-4 sm:-right-12" />
                             </Carousel>
                         ) : (
                             <p className="text-center text-muted-foreground">Select a stone type to see examples.</p>
