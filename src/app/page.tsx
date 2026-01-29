@@ -7,7 +7,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Factory, CircleDollarSign, ShieldCheck, Ship } from 'lucide-react';
+import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const facts = [
     { value: '2001', label: 'Establishment time' },
@@ -67,34 +68,6 @@ const productCategories = [
     },
 ];
 
-const applicationAreas = [
-    {
-        name: 'Building Facade',
-        id: 'application-facade',
-        category: 'sandstone'
-    },
-    {
-        name: 'Landscape',
-        id: 'application-landscape',
-        category: 'sandstone'
-    },
-    {
-        name: 'Flooring',
-        id: 'application-floor',
-        category: 'sandstone'
-    },
-    {
-        name: 'Kitchens',
-        id: 'application-kitchen',
-        category: 'granite'
-    },
-    {
-        name: 'Walls',
-        id: 'application-wall',
-        category: 'sandstone'
-    },
-];
-
 const advantages = [
     {
       icon: Factory,
@@ -126,9 +99,70 @@ const advantages = [
     },
 ];
 
+const StairsIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg {...props} stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 3h18v18H3zM9 9h6v6H9zM3 9h6m-6 6h6m6-6v6m0 6v-6"></path>
+    </svg>
+);
+
+
+const applicationAreasData = [
+  {
+    id: 'indoor-floor',
+    name: 'Indoor Floor',
+    description: 'Our materials are commonly used for indoor floors in living spaces, lobbies, and hallways, offering comfort, surface durability, and modern style.',
+    icon: LayoutGrid,
+    imagePlaceholderId: 'application-indoor-floor',
+    slug: 'indoor-floor'
+  },
+  {
+    id: 'building-facades',
+    name: 'Building Facades',
+    description: 'Create stunning and durable exteriors with our wide range of natural stone options, perfect for any architectural style.',
+    icon: Building2,
+    imagePlaceholderId: 'application-building-facade',
+    slug: 'building-facades'
+  },
+  {
+    id: 'garden-landscape-stone',
+    name: 'Garden Landscape Stone',
+    description: 'Enhance your outdoor spaces with natural stone for pathways, patios, and decorative features that blend seamlessly with nature.',
+    icon: Trees,
+    imagePlaceholderId: 'application-garden-landscape',
+    slug: 'garden-landscape'
+  },
+   {
+    id: 'outdoor-floors',
+    name: 'Outdoor Floors',
+    description: 'Durable and weather-resistant, our outdoor flooring stones provide a safe and beautiful surface for patios, pool decks, and walkways.',
+    icon: Square,
+    imagePlaceholderId: 'application-outdoor-floor',
+    slug: 'outdoor-floors'
+  },
+  {
+    id: 'indoor-wall',
+    name: 'Indoor Wall',
+    description: 'Transform interior spaces with feature walls made from our exquisite natural stones, adding texture, depth, and character.',
+    icon: PanelTop,
+    imagePlaceholderId: 'application-indoor-wall',
+    slug: 'indoor-wall'
+  },
+  {
+    id: 'stairs',
+    name: 'Stairs',
+    description: 'Craft elegant and long-lasting staircases with our premium stone, available in various finishes to match your design aesthetic.',
+    icon: StairsIcon,
+    imagePlaceholderId: 'application-stairs',
+    slug: 'stairs'
+  },
+];
+
 
 const Content = () => {
   const aboutUsImage = PlaceHolderImages.find(p => p.id === 'about-us-home');
+  const [selectedApplication, setSelectedApplication] = useState(applicationAreasData[0]);
+  const selectedImage = PlaceHolderImages.find(p => p.id === selectedApplication.imagePlaceholderId);
+
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -241,34 +275,55 @@ const Content = () => {
     </div>
 
       <div className="mt-24 py-16">
-        <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
-          Application Areas
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-            {applicationAreas.map((area) => {
-                const placeholder = PlaceHolderImages.find(p => p.id === area.id);
-                return (
-                    <Link key={area.name} href={`/category/${area.category}`} passHref>
-                        <div className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-[3/4] cursor-pointer">
-                            {placeholder && (
-                                <Image
-                                    src={placeholder.imageUrl}
-                                    alt={area.name}
-                                    fill
-                                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                                    data-ai-hint={placeholder.imageHint}
-                                />
-                            )}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-                            <div className="absolute inset-x-0 bottom-0 p-4">
-                                <h3 className="text-xl font-headline text-white text-center">
-                                    {area.name}
-                                </h3>
-                            </div>
-                        </div>
-                    </Link>
-                )
-            })}
+        <div className="relative h-[600px] w-full text-white rounded-lg overflow-hidden shadow-xl">
+            {selectedImage && (
+                <Image
+                    src={selectedImage.imageUrl}
+                    alt={selectedApplication.name}
+                    fill
+                    className="object-cover transition-all duration-500 ease-in-out"
+                    key={selectedApplication.id}
+                    data-ai-hint={selectedImage.imageHint}
+                />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-between">
+                <div className="p-8 md:p-12">
+                    <h2 className="text-3xl font-headline font-bold text-white relative inline-block">
+                        APPLICATION AREA
+                        <span className="absolute -bottom-2 left-0 w-1/3 h-0.5 bg-white"></span>
+                    </h2>
+                    <div className="mt-8 max-w-md">
+                        <h3 className="text-4xl font-headline">{selectedApplication.name}</h3>
+                        <p className="mt-4 text-base font-body">{selectedApplication.description}</p>
+                        <Link href={`/application/${selectedApplication.slug}`} passHref>
+                            <Button variant="link" className="text-white pl-0 mt-4 group hover:text-white/90">
+                                View More <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="bg-black/40 backdrop-blur-sm">
+                    <div className="grid grid-cols-3 md:grid-cols-6">
+                        {applicationAreasData.map((area) => {
+                            const Icon = area.icon;
+                            return (
+                                <button
+                                    key={area.id}
+                                    onClick={() => setSelectedApplication(area)}
+                                    className={cn(
+                                        "p-4 text-center cursor-pointer transition-colors duration-300 flex flex-col items-center justify-center gap-2 h-28 border-t-2",
+                                        selectedApplication.id === area.id ? 'bg-white/20 border-primary' : 'hover:bg-white/10 border-transparent'
+                                    )}
+                                >
+                                    <Icon className="w-8 h-8" />
+                                    <span className="text-xs font-body">{area.name}</span>
+                                </button>
+                            );
+                        })}
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>

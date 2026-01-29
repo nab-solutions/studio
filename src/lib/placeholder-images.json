@@ -75,7 +75,7 @@
     {
       "id": "variant-sea-pearl",
       "description": "Image for Sea Pearl quartzite variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1542300813-4d6f9d5758b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmVlbiUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542300813-4d6f9d5758b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmVlbiUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "green quartzite"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "variant-autumn-brown",
       "description": "Image for Autumn Brown sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1691337976804-16de6820f40c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicm93biUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1691337976804-16de6820f40c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicm93biUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "brown sandstone"
     },
     {
@@ -157,36 +157,6 @@
       "imageHint": "stone craftsmanship"
     },
     {
-      "id": "application-facade",
-      "description": "Image for building facade application.",
-      "imageUrl": "https://images.unsplash.com/photo-1582501319769-9da8a5b7b112?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGZhY2FkZXxlbnwwfHx8fDE3Njg5MDUyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "building facade"
-    },
-    {
-      "id": "application-landscape",
-      "description": "Image for landscape application.",
-      "imageUrl": "https://images.unsplash.com/photo-1545185913-92c431414168?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYW5kc2NhcGV8ZW58MHx8fHwxNzY4OTA1Mjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "landscape design"
-    },
-    {
-      "id": "application-floor",
-      "description": "Image for flooring application.",
-      "imageUrl": "https://images.unsplash.com/photo-1617088195842-9271a436e8a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbG9vciUyMHN0b25lfGVufDB8fHx8MTc2ODkwNTMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "stone flooring"
-    },
-    {
-      "id": "application-kitchen",
-      "description": "Image for kitchen application.",
-      "imageUrl": "https://images.unsplash.com/photo-1600585152220-0c6e542e3957?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc2ODkwNTM1NHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "kitchen countertop"
-    },
-    {
-      "id": "application-wall",
-      "description": "Image for wall application.",
-      "imageUrl": "https://images.unsplash.com/photo-1522075598688-a421d0a51415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHdhbGx8ZW58MHx8fHwxNzY4OTA1MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "stone wall"
-    },
-    {
       "id": "advantage-mass-production",
       "description": "Image for mass production advantage, showing stone cutting.",
       "imageUrl": "https://images.unsplash.com/photo-1603561117745-b1fc134ed79d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdG9uZSUyMGN1dHRpbmd8ZW58MHx8fHwxNzY5NjgxNzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -209,6 +179,42 @@
       "description": "Image for logistics and services advantage, showing a cargo ship.",
       "imageUrl": "https://images.unsplash.com/photo-1670121180530-cfcba4438038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYXJnbyUyMHNoaXB8ZW58MHx8fHwxNzY5NjE2MjI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cargo ship"
+    },
+    {
+      "id": "application-building-facade",
+      "description": "Image for building facade application.",
+      "imageUrl": "https://images.unsplash.com/photo-1617464724213-5705303799d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdG9uZSUyMGZhaWNhZGV8ZW58MHx8fHwxNzE5OTk4ODgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone facade"
+    },
+    {
+      "id": "application-garden-landscape",
+      "description": "Image for garden landscape application.",
+      "imageUrl": "https://images.unsplash.com/photo-1541696491614-72a3b09068ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBzdG9uZSUyMHBhdGh8ZW58MHx8fHwxNzE5OTk4OTQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garden stone"
+    },
+    {
+      "id": "application-outdoor-floor",
+      "description": "Image for outdoor floor application.",
+      "imageUrl": "https://images.unsplash.com/photo-1599933571988-75d8787877b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHBhdGlvfGVufDB8fHx8MTcxOTk5ODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone patio"
+    },
+    {
+      "id": "application-indoor-wall",
+      "description": "Image for indoor wall application.",
+      "imageUrl": "https://images.unsplash.com/photo-1574889613146-551187428f5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMHN0b25lJTIwd2FsbHxlbnwwfHx8fDE3MTk5OTkwMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "interior stone"
+    },
+    {
+      "id": "application-indoor-floor",
+      "description": "Image for indoor floor application.",
+      "imageUrl": "https://images.unsplash.com/photo-1618220252344-8ec9162028d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJibGUlMjBiYXRocm9vbSUyMGZsb29yfGVufDB8fHx8MTcxOTk5OTAyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marble bathroom"
+    },
+    {
+      "id": "application-stairs",
+      "description": "Image for stairs application.",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHN0YWlyY2FzZXxlbnwwfHx8fDE3MTk5OTkwNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone staircase"
     }
   ]
 }
