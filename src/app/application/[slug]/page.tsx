@@ -72,28 +72,27 @@ export default function ApplicationPage() {
 
     return (
         <div className="min-h-screen bg-background text-foreground">
-            <div className="w-full bg-card border-b">
-                <div className="container mx-auto py-12 px-4">
-                    <h1 className="text-5xl font-headline text-card-foreground capitalize">{area.name}</h1>
-                    <Link href="/" passHref>
-                        <Button variant="link" className="mt-2 pl-0 text-primary hover:text-primary/80">Back to Home</Button>
+             <div className="relative w-full h-80">
+                {image && (
+                    <Image
+                        src={image.imageUrl}
+                        alt={area.name}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={image.imageHint}
+                    />
+                )}
+                <div className="absolute inset-0 bg-black/50" />
+                <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-4">
+                    <h1 className="text-5xl font-headline text-white capitalize">{area.name}</h1>
+                     <Link href="/" passHref>
+                        <Button variant="link" className="mt-2 pl-0 text-white hover:text-white/80">Back to Home</Button>
                     </Link>
                 </div>
             </div>
 
             <div className="container mx-auto py-16 px-4">
                 <div className="max-w-5xl mx-auto">
-                    {image && (
-                         <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl my-12">
-                            <Image
-                                src={image.imageUrl}
-                                alt={area.name}
-                                fill
-                                className="object-cover"
-                                data-ai-hint={image.imageHint}
-                            />
-                        </div>
-                    )}
                     <h2 className="text-3xl font-headline font-bold mb-6">The Beauty of {area.name}</h2>
                     <p className="text-lg mb-6">
                         Discover the versatility and elegance of natural stone for {area.name.toLowerCase()}. Our collection offers a wide range of materials to bring your vision to life, combining durability with timeless style.
