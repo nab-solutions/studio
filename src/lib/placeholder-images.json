@@ -15,8 +15,8 @@
     {
       "id": "image-src",
       "description": "Main image for the image hero component, showing a sandstone canyon.",
-      "imageUrl": "https://images.unsplash.com/photo-1527499254245-1886131372b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbnRlbG9wZSUyMGNhbnlvbnxlbnwwfHx8fDE3Njg5OTI4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sandstone canyon"
+      "imageUrl": "https://images.unsplash.com/photo-1530328455138-005086c2393c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYW5kc3RvbmUlMjB3YWxsfGVufDB8fHx8MTc2ODU3MzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sandstone wall"
     },
     {
       "id": "image-background",
@@ -401,6 +401,12 @@
       "description": "Image for the delivery and after sales step in quality assurance.",
       "imageUrl": "https://images.unsplash.com/photo-1587574293340-90117c059c98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZWxpdmVyeSUyMHRydWNrfGVufDB8fHx8MTcyMDI1ODc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "delivery truck"
+    },
+    {
+      "id": "footer-background",
+      "description": "White marble texture for the footer background.",
+      "imageUrl": "https://images.unsplash.com/photo-1560961913-c9e2d5f073f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aGl0ZSUyMG1hcmJsZSUyMHRleHR1cmV8ZW58MHx8fHwxNzIyMzg0MjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white marble"
     }
   ]
 }
