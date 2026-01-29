@@ -14,15 +14,15 @@
     },
     {
       "id": "image-src",
-      "description": "Main image for the image hero component, showing a diver underwater.",
-      "imageUrl": "https://images.unsplash.com/photo-1622131467147-414e9c39bc36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1bmRlcndhdGVyJTIwZGl2ZXJ8ZW58MHx8fHwxNzY4NTcyMDc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "underwater diver"
+      "description": "Main image for the image hero component, showing a sandstone canyon.",
+      "imageUrl": "https://images.unsplash.com/photo-1527499254245-1886131372b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbnRlbG9wZSUyMGNhbnlvbnxlbnwwfHx8fDE3Njg5OTI4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sandstone canyon"
     },
     {
       "id": "image-background",
-      "description": "Background image for the image hero, showing a lush green forest.",
-      "imageUrl": "https://images.unsplash.com/photo-1599220144359-d4b723bd476d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmVlbiUyMGZvcmVzdHxlbnwwfHx8fDE3Njg0ODgxNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "green forest"
+      "description": "Background image for the image hero, showing a desert landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNlcnQlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY4OTkyOTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert landscape"
     },
     {
       "id": "category-sandstone",

@@ -38,8 +38,8 @@ const sampleMediaContent: MediaContentCollection = {
   image: {
     src: imageSrc?.imageUrl || '',
     background: imageBackground?.imageUrl || '',
-    title: 'Dynamic Image Showcase',
-    date: 'Aqueous Adventure',
+    title: 'Natural Sandstone',
+    date: 'Timeless Beauty',
     scrollToExpand: 'Scroll to Expand',
   },
 };
@@ -187,7 +187,7 @@ const Content = () => {
 };
 
 export default function Home() {
-  const [mediaType, setMediaType] = useState<'video' | 'image'>('video');
+  const [mediaType, setMediaType] = useState<'video' | 'image'>('image');
   const [currentMedia, setCurrentMedia] = useState(sampleMediaContent[mediaType]);
   const [isMounted, setIsMounted] = useState(false);
 
