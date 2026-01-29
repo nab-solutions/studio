@@ -184,35 +184,44 @@ const Content = () => {
       </div>
 
       <div className="mt-24 py-16">
-            <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
-                Our Advantage
-            </h2>
-            <div className="grid grid-cols-4 gap-8">
-                {advantages.map((advantage) => {
-                    const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
-                    const Icon = advantage.icon;
-                    return (
-                        <div key={advantage.title} className="group relative overflow-hidden rounded-lg shadow-xl aspect-[3/4]">
-                            {placeholder && (
-                                <Image
-                                    src={placeholder.imageUrl}
-                                    alt={advantage.title}
-                                    fill
-                                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                                    data-ai-hint={placeholder.imageHint}
-                                />
-                            )}
-                            <div className="absolute inset-0 bg-black/60"></div>
-                            <div className="relative flex flex-col items-center justify-center text-center h-full p-4 md:p-6 text-white">
-                                <Icon className="w-10 h-10 md:w-12 md:h-12 mb-4" />
-                                <h3 className="text-lg md:text-xl font-headline font-bold mb-2">{advantage.title}</h3>
-                                <p className="text-xs md:text-sm font-body">{advantage.description}</p>
+        <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
+            Our Advantage
+        </h2>
+        <div className="flex w-full h-[450px]">
+            {advantages.map((advantage) => {
+                const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
+                const Icon = advantage.icon;
+                return (
+                    <div 
+                        key={advantage.title} 
+                        className="group relative flex-1 transition-all duration-500 ease-in-out hover:flex-grow-[3] overflow-hidden cursor-pointer first:rounded-l-lg last:rounded-r-lg"
+                    >
+                        {placeholder && (
+                            <Image
+                                src={placeholder.imageUrl}
+                                alt={advantage.title}
+                                fill
+                                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                data-ai-hint={placeholder.imageHint}
+                            />
+                        )}
+                        <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-500"></div>
+                        <div className="relative flex flex-col items-center justify-center text-center h-full p-4 text-white overflow-hidden">
+                            <div className="flex flex-col items-center justify-center w-full transition-all duration-500 group-hover:justify-start group-hover:pt-8">
+                                <Icon className="w-10 h-10 md:w-12 md:h-12 mb-4 transition-transform duration-500" />
+                                <h3 className="text-lg md:text-xl font-headline font-bold text-center">{advantage.title}</h3>
+                                <div className="w-full h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 group-hover:mt-4 transition-all duration-500 delay-200">
+                                    <p className="text-xs md:text-sm font-body px-2">
+                                        {advantage.description}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    );
-                })}
-            </div>
+                    </div>
+                );
+            })}
         </div>
+    </div>
 
       <div className="mt-24 py-16">
         <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
