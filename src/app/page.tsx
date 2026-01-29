@@ -276,7 +276,9 @@ const Content = () => {
         <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
             Our Advantage
         </h2>
-        <div className="flex w-full h-[450px]">
+        
+        {/* Desktop View */}
+        <div className="hidden md:flex w-full h-[450px]">
             {advantages.map((advantage) => {
                 const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
                 const Icon = advantage.icon;
@@ -305,6 +307,35 @@ const Content = () => {
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+
+        {/* Mobile View */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:hidden">
+            {advantages.map((advantage) => {
+                const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
+                const Icon = advantage.icon;
+                return (
+                    <div key={advantage.title} className="group relative rounded-lg overflow-hidden shadow-lg">
+                        {placeholder && (
+                            <Image
+                                src={placeholder.imageUrl}
+                                alt={advantage.title}
+                                fill
+                                className="object-cover"
+                                data-ai-hint={placeholder.imageHint}
+                            />
+                        )}
+                        <div className="absolute inset-0 bg-black/60"></div>
+                        <div className="relative flex flex-col items-center justify-center text-center h-full p-6 text-white min-h-[300px]">
+                            <Icon className="w-12 h-12 mb-4" />
+                            <h3 className="text-xl font-headline font-bold">{advantage.title}</h3>
+                            <p className="text-sm font-body mt-2 px-2">
+                                {advantage.description}
+                            </p>
                         </div>
                     </div>
                 );
@@ -373,7 +404,7 @@ const Content = () => {
           Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
         </p>
         <Tabs defaultValue="sourcing" className="w-full">
-          <TabsList className="max-w-5xl mx-auto flex items-center justify-between bg-transparent w-full mb-8">
+          <TabsList className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-4 bg-transparent w-full mb-8">
             {qualitySteps.map((step) => (
               <TabsTrigger
                 key={step.id}
