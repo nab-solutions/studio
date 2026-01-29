@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const facts = [
     { value: '2001', label: 'Establishment time' },
@@ -163,6 +164,43 @@ const Content = () => {
   const [selectedApplication, setSelectedApplication] = useState(applicationAreasData[0]);
   const selectedImage = PlaceHolderImages.find(p => p.id === selectedApplication.imagePlaceholderId);
 
+  const qualitySteps = [
+    {
+      id: 'sourcing',
+      title: 'SOURCING',
+      description: "We meticulously source our natural stones from the world's most reputable quarries. Our experts travel globally to select only the finest blocks, ensuring superior quality and unique character for every project.",
+      imageId: 'quality-sourcing',
+      imageHint: 'raw stone quarry'
+    },
+    {
+      id: 'manufacturing',
+      title: 'MANUFACTURING',
+      description: "Our state-of-the-art facility uses precision machinery to cut and shape the stone to exact specifications. Our skilled artisans then apply their craft to finish each piece, from polishing to custom edging, ensuring a flawless result.",
+      imageId: 'quality-manufacturing',
+      imageHint: 'stone factory cutting'
+    },
+    {
+      id: 'quality-control',
+      title: 'QUALITY CONTROL',
+      description: "Every slab undergoes a rigorous inspection process. We check for color consistency, structural integrity, and finish quality. Only stones that meet our exacting standards are approved for our clients.",
+      imageId: 'quality-control',
+      imageHint: 'stone inspection'
+    },
+    {
+      id: 'packaging-shipping',
+      title: 'PACKAGING & SHIPPING',
+      description: "Our packaging team uses robust and secure packing materials to protect stone during transit. Containers are loaded with care to minimize movement, ensuring safe delivery to destinations worldwide.",
+      imageId: 'quality-packaging',
+      imageHint: 'stone shipping container'
+    },
+    {
+      id: 'delivery-after-sales',
+      title: 'DELIVERY & AFTER SALES',
+      description: "We coordinate closely with logistics partners to ensure timely and professional delivery. Our commitment doesn't end there; we provide comprehensive after-sales support to ensure your complete satisfaction.",
+      imageId: 'quality-delivery',
+      imageHint: 'delivery truck'
+    },
+];
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -326,6 +364,52 @@ const Content = () => {
             </div>
         </div>
       </div>
+      
+      <div className="mt-24 py-16">
+        <h2 className="font-headline text-3xl font-bold mb-4 text-center text-foreground">
+          How We Ensure Quality Stone In 5 Steps
+        </h2>
+        <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+          Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
+        </p>
+        <Tabs defaultValue="packaging-shipping" className="w-full">
+          <TabsList className="flex flex-wrap justify-center gap-8 bg-transparent w-full mb-8">
+            {qualitySteps.map((step) => (
+              <TabsTrigger
+                key={step.id}
+                value={step.id}
+                className="text-muted-foreground uppercase tracking-widest text-sm data-[state=active]:text-foreground data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
+              >
+                {step.title}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+          {qualitySteps.map((step) => {
+            const image = PlaceHolderImages.find((p) => p.id === step.imageId);
+            return (
+              <TabsContent key={step.id} value={step.id} className="mt-12">
+                <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+                    {image && (
+                      <Image
+                        src={image.imageUrl}
+                        alt={step.title}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={image.imageHint}
+                      />
+                    )}
+                  </div>
+                  <div>
+                    <p className="text-lg text-muted-foreground">{step.description}</p>
+                  </div>
+                </div>
+              </TabsContent>
+            );
+          })}
+        </Tabs>
+      </div>
+
     </div>
   );
 };
