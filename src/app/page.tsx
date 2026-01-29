@@ -373,7 +373,7 @@ const Content = () => {
           Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
         </p>
         <Tabs defaultValue="sourcing" className="w-full">
-          <TabsList className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 bg-transparent w-full mb-8">
+          <TabsList className="max-w-5xl mx-auto flex items-center justify-between bg-transparent w-full mb-8">
             {qualitySteps.map((step) => (
               <TabsTrigger
                 key={step.id}
@@ -388,8 +388,8 @@ const Content = () => {
             const image = PlaceHolderImages.find((p) => p.id === step.imageId);
             return (
               <TabsContent key={step.id} value={step.id} className="mt-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center max-w-6xl mx-auto">
+                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg md:col-span-3">
                     {image && (
                       <Image
                         src={image.imageUrl}
@@ -400,7 +400,7 @@ const Content = () => {
                       />
                     )}
                   </div>
-                  <div>
+                  <div className="md:col-span-2">
                     <p className="text-lg text-muted-foreground">{step.description}</p>
                   </div>
                 </div>
