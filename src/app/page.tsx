@@ -349,9 +349,9 @@ const Content = () => {
                             />
                         )}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col justify-end h-full">
-                            <div>
-                                <Icon className="w-10 h-10 mb-4" />
+                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col justify-end items-center h-full text-center">
+                            <div className="w-full">
+                                <Icon className="w-10 h-10 mb-4 mx-auto" />
                                 <h3 className="text-2xl font-headline font-bold">{advantage.title}</h3>
                                 <motion.div
                                     initial={false}
