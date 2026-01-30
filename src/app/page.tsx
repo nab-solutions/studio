@@ -163,6 +163,17 @@ const Content = () => {
   const aboutUsImage = PlaceHolderImages.find(p => p.id === 'about-us-home');
   const [selectedApplication, setSelectedApplication] = useState(applicationAreasData[0]);
   const selectedImage = PlaceHolderImages.find(p => p.id === selectedApplication.imagePlaceholderId);
+  const [hoveredAdvantage, setHoveredAdvantage] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
 
   const qualitySteps = [
     {
@@ -280,36 +291,88 @@ const Content = () => {
         <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
             Our Advantage
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {advantages.map((advantage) => {
+        {isMobile ? (
+             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {advantages.map((advantage) => {
+                    const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
+                    const Icon = advantage.icon;
+                    return (
+                        <Card key={advantage.title} className="group overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                            <CardHeader className="p-0">
+                                <div className="relative aspect-video">
+                                    {placeholder && (
+                                        <Image
+                                            src={placeholder.imageUrl}
+                                            alt={advantage.title}
+                                            fill
+                                            className="object-cover"
+                                            data-ai-hint={placeholder.imageHint}
+                                        />
+                                    )}
+                                </div>
+                            </CardHeader>
+                            <CardContent className="p-6 text-center">
+                                <Icon className="w-12 h-12 mb-4 mx-auto text-primary" />
+                                <h3 className="text-xl font-headline font-bold text-card-foreground">{advantage.title}</h3>
+                                <p className="text-sm font-body mt-2 text-muted-foreground">
+                                    {advantage.description}
+                                </p>
+                            </CardContent>
+                        </Card>
+                    );
+                })}
+            </div>
+        ) : (
+            <div 
+              className="flex w-full h-[500px]"
+              onMouseLeave={() => setHoveredAdvantage(null)}
+            >
+              {advantages.map((advantage, index) => {
                 const placeholder = PlaceHolderImages.find(p => p.id === advantage.id);
                 const Icon = advantage.icon;
                 return (
-                    <Card key={advantage.title} className="group overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <CardHeader className="p-0">
-                            <div className="relative aspect-video">
-                                {placeholder && (
-                                    <Image
-                                        src={placeholder.imageUrl}
-                                        alt={advantage.title}
-                                        fill
-                                        className="object-cover"
-                                        data-ai-hint={placeholder.imageHint}
-                                    />
-                                )}
+                    <motion.div 
+                        key={advantage.title}
+                        onMouseEnter={() => setHoveredAdvantage(index)}
+                        className="relative h-full overflow-hidden cursor-pointer"
+                        animate={{ flex: hoveredAdvantage === index ? 4 : 1 }}
+                        transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}
+                        style={{ flex: 1 }}
+                    >
+                        {placeholder && (
+                            <Image
+                                src={placeholder.imageUrl}
+                                alt={advantage.title}
+                                fill
+                                className="object-cover"
+                                data-ai-hint={placeholder.imageHint}
+                            />
+                        )}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col justify-end h-full">
+                            <div>
+                                <Icon className="w-10 h-10 mb-4" />
+                                <h3 className="text-2xl font-headline font-bold">{advantage.title}</h3>
+                                <motion.div
+                                    initial={false}
+                                    animate={{ 
+                                        opacity: hoveredAdvantage === index ? 1 : 0,
+                                        height: hoveredAdvantage === index ? 'auto' : 0,
+                                    }}
+                                    transition={{ duration: 0.4, ease: "easeOut" }}
+                                    className="overflow-hidden"
+                                >
+                                    <p className="text-sm font-body mt-2">
+                                        {advantage.description}
+                                    </p>
+                                </motion.div>
                             </div>
-                        </CardHeader>
-                        <CardContent className="p-6 text-center">
-                            <Icon className="w-12 h-12 mb-4 mx-auto text-primary" />
-                            <h3 className="text-xl font-headline font-bold text-card-foreground">{advantage.title}</h3>
-                            <p className="text-sm font-body mt-2 text-muted-foreground">
-                                {advantage.description}
-                            </p>
-                        </CardContent>
-                    </Card>
+                        </div>
+                    </motion.div>
                 );
-            })}
-        </div>
+              })}
+            </div>
+        )}
     </div>
 
       <div className="mt-24 py-16">
