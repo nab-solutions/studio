@@ -7,7 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain, Search, Package, ThumbsUp } from 'lucide-react';
+import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain, Search, Package, ThumbsUp, ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -439,31 +439,37 @@ const Content = () => {
 
         {/* Desktop View */}
         <div className="hidden md:grid md:grid-cols-2 gap-12 items-start">
-          <div className="flex flex-col gap-4 sticky top-28">
-            {qualitySteps.map((step) => {
-              const Icon = step.icon;
-              const isActive = activeQualityStep.id === step.id;
-              return (
-                <button
-                  key={step.id}
-                  onClick={() => setActiveQualityStep(step)}
-                  className={cn(
-                    "flex items-center gap-4 p-4 rounded-lg text-left transition-all duration-300 border-2",
-                    isActive ? "bg-card shadow-lg border-primary" : "bg-card/50 border-transparent hover:bg-card hover:shadow-md"
-                  )}
-                >
-                  <div className={cn(
-                    "w-16 h-16 rounded-full flex items-center justify-center transition-colors flex-shrink-0",
-                    isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
-                  )}>
-                    <Icon className="w-8 h-8" />
+          <div className="sticky top-28">
+            <div className="flex flex-col items-center">
+              {qualitySteps.map((step, index) => {
+                const Icon = step.icon;
+                const isActive = activeQualityStep.id === step.id;
+                return (
+                  <div key={step.id} className="flex w-full max-w-sm flex-col items-center">
+                    <button
+                      onClick={() => setActiveQualityStep(step)}
+                      className={cn(
+                        "flex items-center gap-4 p-4 rounded-lg text-left transition-all duration-300 border-2 w-full",
+                        isActive ? "bg-card shadow-lg border-primary" : "bg-card/50 border-transparent hover:bg-card hover:shadow-md"
+                      )}
+                    >
+                      <div className={cn(
+                        "w-16 h-16 rounded-full flex items-center justify-center transition-colors flex-shrink-0",
+                        isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                      )}>
+                        <Icon className="w-8 h-8" />
+                      </div>
+                      <div>
+                        <h3 className="font-headline text-xl font-bold">{step.title}</h3>
+                      </div>
+                    </button>
+                    {index < qualitySteps.length - 1 && (
+                      <ArrowDown className="w-6 h-6 text-muted-foreground my-2" />
+                    )}
                   </div>
-                  <div>
-                    <h3 className="font-headline text-xl font-bold">{step.title}</h3>
-                  </div>
-                </button>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
           <div className="relative">
             <AnimatePresence mode="wait">
