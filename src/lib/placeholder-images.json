@@ -1,435 +1,423 @@
 {
   "placeholderImages": [
     {
-      "id": "video-poster",
-      "description": "Poster image for the video hero component, showing Earth from space.",
-      "imageUrl": "/video-poster.jpg",
-      "imageHint": "space earth"
-    },
-    {
-      "id": "video-background",
-      "description": "Background image for the video hero, showing a starry galaxy.",
-      "imageUrl": "/video-background.jpg",
-      "imageHint": "galaxy stars"
-    },
-    {
       "id": "image-src",
       "description": "Main image for the image hero component, showing a sandstone canyon.",
-      "imageUrl": "/image-src.jpg",
+      "imageUrl": "/image-src.png",
       "imageHint": "sandstone wall"
     },
     {
       "id": "image-background",
       "description": "Background image for the image hero, showing a desert landscape.",
-      "imageUrl": "/image-background.jpg",
+      "imageUrl": "/image-background.png",
       "imageHint": "desert landscape"
     },
     {
       "id": "category-sandstone",
       "description": "Image for sandstone product category.",
-      "imageUrl": "/category-sandstone.jpg",
+      "imageUrl": "/category-sandstone.png",
       "imageHint": "sandstone wall"
     },
     {
       "id": "category-crazy-stone",
       "description": "Image for Crazy Stone product category.",
-      "imageUrl": "/category-crazy-stone.jpg",
+      "imageUrl": "/category-crazy-stone.png",
       "imageHint": "crazy paving"
     },
     {
       "id": "category-rockface-stone",
       "description": "Image for Rockface Stone product category.",
-      "imageUrl": "/category-rockface-stone.jpg",
+      "imageUrl": "/category-rockface-stone.png",
       "imageHint": "rockface wall"
     },
     {
       "id": "category-stepping-stone",
       "description": "Image for Stepping Stone product category.",
-      "imageUrl": "/category-stepping-stone.jpg",
+      "imageUrl": "/category-stepping-stone.png",
       "imageHint": "stepping stones"
     },
     {
       "id": "variant-black-pearl",
       "description": "Image for Black Pearl granite variant.",
-      "imageUrl": "/variant-black-pearl.jpg",
+      "imageUrl": "/variant-black-pearl.png",
       "imageHint": "black granite"
     },
     {
       "id": "variant-ubatuba",
       "description": "Image for Ubatuba granite variant.",
-      "imageUrl": "/variant-ubatuba.jpg",
+      "imageUrl": "/variant-ubatuba.png",
       "imageHint": "green granite"
     },
     {
       "id": "variant-kashmir-white",
       "description": "Image for Kashmir White granite variant.",
-      "imageUrl": "/variant-kashmir-white.jpg",
+      "imageUrl": "/variant-kashmir-white.png",
       "imageHint": "white granite"
     },
     {
       "id": "variant-taj-mahal",
       "description": "Image for Taj Mahal quartzite variant.",
-      "imageUrl": "/variant-taj-mahal.jpg",
+      "imageUrl": "/variant-taj-mahal.png",
       "imageHint": "beige quartzite"
     },
     {
       "id": "variant-super-white",
       "description": "Image for Super White quartzite variant.",
-      "imageUrl": "/variant-super-white.jpg",
+      "imageUrl": "/variant-super-white.png",
       "imageHint": "white quartzite"
     },
     {
       "id": "variant-sea-pearl",
       "description": "Image for Sea Pearl quartzite variant.",
-      "imageUrl": "/variant-sea-pearl.jpg",
+      "imageUrl": "/variant-sea-pearl.png",
       "imageHint": "green quartzite"
     },
     {
       "id": "variant-stepping-round",
       "description": "Image for Round Stepping Stone variant.",
-      "imageUrl": "/variant-stepping-round.jpg",
+      "imageUrl": "/variant-stepping-round.png",
       "imageHint": "round stepping stone"
     },
     {
       "id": "variant-stepping-square",
       "description": "Image for Square Stepping Stone variant.",
-      "imageUrl": "/variant-stepping-square.jpg",
+      "imageUrl": "/variant-stepping-square.png",
       "imageHint": "square stepping stone"
     },
     {
       "id": "variant-stepping-irregular",
       "description": "Image for Irregular Stepping Stone variant.",
-      "imageUrl": "/variant-stepping-irregular.jpg",
+      "imageUrl": "/variant-stepping-irregular.png",
       "imageHint": "irregular stepping stone"
     },
     {
       "id": "variant-dholpur-beige",
       "description": "Image for Dholpur Beige sandstone.",
-      "imageUrl": "/variant-dholpur-beige.jpg",
+      "imageUrl": "/variant-dholpur-beige.png",
       "imageHint": "beige sandstone"
     },
     {
       "id": "variant-jodhpur",
       "description": "Image for Jodhpur sandstone.",
-      "imageUrl": "/variant-jodhpur.jpg",
+      "imageUrl": "/variant-jodhpur.png",
       "imageHint": "jodhpur stone"
     },
     {
       "id": "variant-basalt",
       "description": "Image for Basalt stone.",
-      "imageUrl": "/variant-basalt.jpg",
+      "imageUrl": "/variant-basalt.png",
       "imageHint": "basalt rock"
     },
     {
       "id": "variant-autumn-brown",
       "description": "Image for Autumn Brown sandstone.",
-      "imageUrl": "/variant-autumn-brown.jpg",
+      "imageUrl": "/variant-autumn-brown.png",
       "imageHint": "brown sandstone"
     },
     {
       "id": "variant-teakwood-yellow",
       "description": "Image for Teakwood Yellow sandstone.",
-      "imageUrl": "/variant-teakwood-yellow.jpg",
+      "imageUrl": "/variant-teakwood-yellow.png",
       "imageHint": "yellow sandstone"
     },
     {
       "id": "variant-teakwood-beige",
       "description": "Image for Teakwood Beige sandstone.",
-      "imageUrl": "/variant-teakwood-beige.jpg",
+      "imageUrl": "/variant-teakwood-beige.png",
       "imageHint": "beige sandstone"
     },
     {
       "id": "variant-indian-mocha",
       "description": "Image for Indian Mocha sandstone.",
-      "imageUrl": "/variant-indian-mocha.jpg",
+      "imageUrl": "/variant-indian-mocha.png",
       "imageHint": "brown sandstone"
     },
     {
       "id": "variant-gwalior-mint",
       "description": "Image for Gwalior Mint sandstone.",
-      "imageUrl": "/variant-gwalior-mint.jpg",
+      "imageUrl": "/variant-gwalior-mint.png",
       "imageHint": "mint sandstone"
     },
     {
       "id": "variant-sagar-black",
       "description": "Image for Sagar Black sandstone.",
-      "imageUrl": "/variant-sagar-black.jpg",
+      "imageUrl": "/variant-sagar-black.png",
       "imageHint": "black sandstone"
     },
     {
       "id": "variant-kandla-grey",
       "description": "Image for Kandla Grey sandstone.",
-      "imageUrl": "/variant-kandla-grey.jpg",
+      "imageUrl": "/variant-kandla-grey.png",
       "imageHint": "grey sandstone"
     },
     {
       "id": "about-us-home",
       "description": "Image for the About Us section on the home page.",
-      "imageUrl": "/about-us-home.jpg",
+      "imageUrl": "/about-us-home.png",
       "imageHint": "company office"
     },
     {
       "id": "about-us-page",
       "description": "Image for the main About Us page.",
-      "imageUrl": "/about-us-page.jpg",
+      "imageUrl": "/about-us-page.png",
       "imageHint": "team meeting"
     },
     {
       "id": "about-commitment",
       "description": "Image for the About Us details page.",
-      "imageUrl": "/about-commitment.jpg",
+      "imageUrl": "/about-commitment.png",
       "imageHint": "stone craftsmanship"
     },
     {
       "id": "advantage-mass-production",
       "description": "Image for mass production advantage, showing stone cutting.",
-      "imageUrl": "/advantage-mass-production.jpg",
+      "imageUrl": "/advantage-mass-production.png",
       "imageHint": "stone cutting"
     },
     {
       "id": "advantage-rich-export",
       "description": "Image for rich export experience advantage, showing marble slabs.",
-      "imageUrl": "/advantage-rich-export.jpg",
+      "imageUrl": "/advantage-rich-export.png",
       "imageHint": "marble slabs"
     },
     {
       "id": "advantage-quality-assurance",
       "description": "Image for quality assurance advantage, showing quality inspection.",
-      "imageUrl": "/advantage-quality-assurance.jpg",
+      "imageUrl": "/advantage-quality-assurance.png",
       "imageHint": "stone inspection"
     },
     {
       "id": "advantage-logistics",
       "description": "Image for logistics and services advantage, showing a cargo ship.",
-      "imageUrl": "/advantage-logistics.jpg",
+      "imageUrl": "/advantage-logistics.png",
       "imageHint": "cargo ship"
     },
     {
       "id": "application-building-facade",
       "description": "Image for building facade application.",
-      "imageUrl": "/application-building-facade.jpg",
+      "imageUrl": "/application-building-facade.png",
       "imageHint": "stone facade"
     },
     {
       "id": "application-garden-landscape",
       "description": "Image for garden landscape application.",
-      "imageUrl": "/application-garden-landscape.jpg",
+      "imageUrl": "/application-garden-landscape.png",
       "imageHint": "garden stone"
     },
     {
       "id": "application-outdoor-floor",
       "description": "Image for outdoor floor application.",
-      "imageUrl": "/application-outdoor-floor.jpg",
+      "imageUrl": "/application-outdoor-floor.png",
       "imageHint": "stone patio"
     },
     {
       "id": "application-indoor-wall",
       "description": "Image for indoor wall application.",
-      "imageUrl": "/application-indoor-wall.jpg",
+      "imageUrl": "/application-indoor-wall.png",
       "imageHint": "interior stone"
     },
     {
       "id": "application-indoor-floor",
       "description": "Image for indoor floor application.",
-      "imageUrl": "/application-indoor-floor.jpg",
+      "imageUrl": "/application-indoor-floor.png",
       "imageHint": "marble bathroom"
     },
     {
       "id": "application-boulders",
       "description": "Image for boulders application area.",
-      "imageUrl": "/application-boulders.jpg",
+      "imageUrl": "/application-boulders.png",
       "imageHint": "garden boulder"
     },
     {
       "id": "gallery-facade-sandstone-1",
       "description": "Image of a building facade with sandstone.",
-      "imageUrl": "/gallery-facade-sandstone-1.jpg",
+      "imageUrl": "/gallery-facade-sandstone-1.png",
       "imageHint": "sandstone facade"
     },
     {
       "id": "gallery-facade-sandstone-2",
       "description": "Image of a modern building with sandstone.",
-      "imageUrl": "/gallery-facade-sandstone-2.jpg",
+      "imageUrl": "/gallery-facade-sandstone-2.png",
       "imageHint": "modern sandstone"
     },
     {
       "id": "gallery-facade-granite-1",
       "description": "Image of a building facade with granite.",
-      "imageUrl": "/gallery-facade-granite-1.jpg",
+      "imageUrl": "/gallery-facade-granite-1.png",
       "imageHint": "granite facade"
     },
     {
       "id": "gallery-facade-granite-2",
       "description": "Image of a polished granite building exterior.",
-      "imageUrl": "/gallery-facade-granite-2.jpg",
+      "imageUrl": "/gallery-facade-granite-2.png",
       "imageHint": "polished granite"
     },
     {
       "id": "gallery-facade-marble-1",
       "description": "Image of a building facade with marble.",
-      "imageUrl": "/gallery-facade-marble-1.jpg",
+      "imageUrl": "/gallery-facade-marble-1.png",
       "imageHint": "marble facade"
     },
     {
       "id": "gallery-facade-marble-2",
       "description": "Image of a classic building with marble.",
-      "imageUrl": "/gallery-facade-marble-2.jpg",
+      "imageUrl": "/gallery-facade-marble-2.png",
       "imageHint": "classic marble"
     },
     {
       "id": "gallery-garden-sandstone-1",
       "description": "Image of a garden path with sandstone.",
-      "imageUrl": "/gallery-garden-sandstone-1.jpg",
+      "imageUrl": "/gallery-garden-sandstone-1.png",
       "imageHint": "sandstone path"
     },
     {
       "id": "gallery-garden-sandstone-2",
       "description": "Image of sandstone in a garden landscape.",
-      "imageUrl": "/gallery-garden-sandstone-2.jpg",
+      "imageUrl": "/gallery-garden-sandstone-2.png",
       "imageHint": "garden stone"
     },
     {
       "id": "gallery-garden-slate-1",
       "description": "Image of a garden path with slate.",
-      "imageUrl": "/gallery-garden-slate-1.jpg",
+      "imageUrl": "/gallery-garden-slate-1.png",
       "imageHint": "slate path"
     },
     {
       "id": "gallery-garden-slate-2",
       "description": "Image of slate in a garden landscape.",
-      "imageUrl": "/gallery-garden-slate-2.jpg",
+      "imageUrl": "/gallery-garden-slate-2.png",
       "imageHint": "dark stone"
     },
     {
       "id": "gallery-outdoor-sandstone-1",
       "description": "Image of an outdoor floor with sandstone.",
-      "imageUrl": "/gallery-outdoor-sandstone-1.jpg",
+      "imageUrl": "/gallery-outdoor-sandstone-1.png",
       "imageHint": "sandstone patio"
     },
     {
       "id": "gallery-outdoor-sandstone-2",
       "description": "Image of a sandstone pool deck.",
-      "imageUrl": "/gallery-outdoor-sandstone-2.jpg",
+      "imageUrl": "/gallery-outdoor-sandstone-2.png",
       "imageHint": "pool deck"
     },
     {
       "id": "gallery-outdoor-granite-1",
       "description": "Image of an outdoor floor with granite.",
-      "imageUrl": "/gallery-outdoor-granite-1.jpg",
+      "imageUrl": "/gallery-outdoor-granite-1.png",
       "imageHint": "granite paving"
     },
     {
       "id": "gallery-outdoor-granite-2",
       "description": "Image of outdoor granite flooring.",
-      "imageUrl": "/gallery-outdoor-granite-2.jpg",
+      "imageUrl": "/gallery-outdoor-granite-2.png",
       "imageHint": "outdoor granite"
     },
     {
       "id": "gallery-indoor-wall-marble-1",
       "description": "Image of an indoor wall with marble.",
-      "imageUrl": "/gallery-indoor-wall-marble-1.jpg",
+      "imageUrl": "/gallery-indoor-wall-marble-1.png",
       "imageHint": "marble wall"
     },
     {
       "id": "gallery-indoor-wall-marble-2",
       "description": "Image of a luxury interior with a marble wall.",
-      "imageUrl": "/gallery-indoor-wall-marble-2.jpg",
+      "imageUrl": "/gallery-indoor-wall-marble-2.png",
       "imageHint": "luxury interior"
     },
     {
       "id": "gallery-indoor-wall-quartzite-1",
       "description": "Image of an indoor wall with quartzite.",
-      "imageUrl": "/gallery-indoor-wall-quartzite-1.jpg",
+      "imageUrl": "/gallery-indoor-wall-quartzite-1.png",
       "imageHint": "quartzite wall"
     },
     {
       "id": "gallery-indoor-wall-quartzite-2",
       "description": "Image of a quartzite accent wall.",
-      "imageUrl": "/gallery-indoor-wall-quartzite-2.jpg",
+      "imageUrl": "/gallery-indoor-wall-quartzite-2.png",
       "imageHint": "accent wall"
     },
     {
       "id": "gallery-indoor-floor-marble-1",
       "description": "Image of an indoor floor with marble.",
-      "imageUrl": "/gallery-indoor-floor-marble-1.jpg",
+      "imageUrl": "/gallery-indoor-floor-marble-1.png",
       "imageHint": "marble floor"
     },
     {
       "id": "gallery-indoor-floor-marble-2",
       "description": "Image of a polished marble floor.",
-      "imageUrl": "/gallery-indoor-floor-marble-2.jpg",
+      "imageUrl": "/gallery-indoor-floor-marble-2.png",
       "imageHint": "polished marble"
     },
     {
       "id": "gallery-indoor-floor-granite-1",
       "description": "Image of an indoor floor with granite.",
-      "imageUrl": "/gallery-indoor-floor-granite-1.jpg",
+      "imageUrl": "/gallery-indoor-floor-granite-1.png",
       "imageHint": "granite floor"
     },
     {
       "id": "gallery-indoor-floor-granite-2",
       "description": "Image of a dark granite floor.",
-      "imageUrl": "/gallery-indoor-floor-granite-2.jpg",
+      "imageUrl": "/gallery-indoor-floor-granite-2.png",
       "imageHint": "dark floor"
     },
     {
       "id": "quality-sourcing",
       "description": "Image for the sourcing step in quality assurance.",
-      "imageUrl": "/quality-sourcing.jpg",
+      "imageUrl": "/quality-sourcing.png",
       "imageHint": "raw stone quarry"
     },
     {
       "id": "quality-manufacturing",
       "description": "Image for the manufacturing step in quality assurance.",
-      "imageUrl": "/quality-manufacturing.jpg",
+      "imageUrl": "/quality-manufacturing.png",
       "imageHint": "stone factory cutting"
     },
     {
       "id": "quality-control",
       "description": "Image for the quality control step in quality assurance.",
-      "imageUrl": "/quality-control.jpg",
+      "imageUrl": "/quality-control.png",
       "imageHint": "stone inspection"
     },
     {
       "id": "quality-packaging",
       "description": "Image for the packaging and shipping step in quality assurance.",
-      "imageUrl": "/quality-packaging.jpg",
+      "imageUrl": "/quality-packaging.png",
       "imageHint": "stone shipping"
     },
     {
       "id": "quality-delivery",
       "description": "Image for the delivery and after sales step in quality assurance.",
-      "imageUrl": "/quality-delivery.jpg",
+      "imageUrl": "/quality-delivery.png",
       "imageHint": "delivery truck"
     },
     {
       "id": "footer-background",
       "description": "White marble texture for the footer background.",
-      "imageUrl": "/footer-background.jpg",
+      "imageUrl": "/footer-background.png",
       "imageHint": "white marble"
     },
     {
       "id": "variant-mandana-red",
       "description": "Image for Mandana Red stone.",
-      "imageUrl": "/variant-mandana-red.jpg",
+      "imageUrl": "/variant-mandana-red.png",
       "imageHint": "red stone"
     },
     {
       "id": "variant-kota-brown",
       "description": "Image for Kota Stone Brown.",
-      "imageUrl": "/variant-kota-brown.jpg",
+      "imageUrl": "/variant-kota-brown.png",
       "imageHint": "brown stone"
     },
     {
       "id": "variant-kota-grey",
       "description": "Image for Kota Stone Grey.",
-      "imageUrl": "/variant-kota-grey.jpg",
+      "imageUrl": "/variant-kota-grey.png",
       "imageHint": "grey stone"
     },
     {
       "id": "variant-kota-yellow",
       "description": "Image for Kota Stone Yellow.",
-      "imageUrl": "/variant-kota-yellow.jpg",
+      "imageUrl": "/variant-kota-yellow.png",
       "imageHint": "yellow stone"
     }
   ]

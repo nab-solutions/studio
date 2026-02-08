@@ -19,8 +19,6 @@ const facts = [
     { value: '2000+', label: 'Daily Production (m²)' },
 ];
 
-const videoPoster = PlaceHolderImages.find(p => p.id === 'video-poster');
-const videoBackground = PlaceHolderImages.find(p => p.id === 'video-background');
 const imageSrc = PlaceHolderImages.find(p => p.id === 'image-src');
 const imageBackground = PlaceHolderImages.find(p => p.id === 'image-background');
 
@@ -38,14 +36,6 @@ interface MediaContentCollection {
 }
 
 const sampleMediaContent: MediaContentCollection = {
-  video: {
-    src: 'https://videos.pexels.com/video-files/4434246/4434246-hd_1920_1080_25fps.mp4',
-    poster: videoPoster?.imageUrl,
-    background: videoBackground?.imageUrl || '',
-    title: 'Stone Emporium',
-    date: 'Cosmic Journey',
-    scrollToExpand: 'Scroll to Expand',
-  },
   image: {
     src: imageSrc?.imageUrl || '',
     background: imageBackground?.imageUrl || '',
