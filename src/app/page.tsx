@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain, Search, Package, ThumbsUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const facts = [
     { value: '2001', label: 'Establishment time' },
@@ -433,24 +434,44 @@ const Content = () => {
         <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
           Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
         </p>
-        <div className="relative">
-          <div className="absolute left-0 top-12 w-full h-0.5 bg-border -translate-y-px hidden md:block" />
-          
-          <div className="relative grid grid-cols-1 md:grid-cols-5 gap-y-12 md:gap-x-8">
-              {qualitySteps.map((step) => {
-                  const Icon = step.icon;
-                  return (
-                      <div key={step.id} className="flex flex-col items-center text-center group">
-                          <div className="relative z-10 w-24 h-24 rounded-full bg-card border-4 border-primary flex items-center justify-center mb-4 shadow-lg transform transition-transform duration-300 group-hover:scale-110">
-                              <Icon className="w-12 h-12 text-primary" />
-                          </div>
-                          <h3 className="font-headline text-xl font-bold mb-2">{step.title}</h3>
-                          <p className="text-sm text-muted-foreground px-2">{step.description}</p>
-                      </div>
-                  )
-              })}
+        <TooltipProvider>
+          <div className="relative">
+            <div className="absolute left-0 top-12 w-full h-0.5 bg-border -translate-y-px hidden md:block" />
+            
+            <div className="relative grid grid-cols-1 md:grid-cols-5 gap-y-12 md:gap-x-8">
+                {qualitySteps.map((step) => {
+                    const Icon = step.icon;
+                    const placeholder = PlaceHolderImages.find(p => p.id === step.imageId);
+                    return (
+                        <Tooltip key={step.id}>
+                            <TooltipTrigger asChild>
+                                <div className="flex flex-col items-center text-center group cursor-pointer">
+                                    <div className="relative z-10 w-24 h-24 rounded-full bg-card border-4 border-primary flex items-center justify-center mb-4 shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                                        <Icon className="w-12 h-12 text-primary" />
+                                    </div>
+                                    <h3 className="font-headline text-xl font-bold mb-2">{step.title}</h3>
+                                    <p className="text-sm text-muted-foreground px-2">{step.description}</p>
+                                </div>
+                            </TooltipTrigger>
+                            <TooltipContent className="p-0 border-none bg-transparent shadow-xl rounded-lg">
+                                {placeholder && (
+                                    <div className="relative w-64 h-48 rounded-lg overflow-hidden">
+                                        <Image
+                                            src={placeholder.imageUrl}
+                                            alt={step.title}
+                                            fill
+                                            className="object-cover"
+                                            data-ai-hint={placeholder.imageHint}
+                                        />
+                                    </div>
+                                )}
+                            </TooltipContent>
+                        </Tooltip>
+                    )
+                })}
+            </div>
           </div>
-        </div>
+        </TooltipProvider>
       </div>
 
     </div>
