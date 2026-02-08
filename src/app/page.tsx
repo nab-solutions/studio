@@ -9,8 +9,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain, Search, Package, ThumbsUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const facts = [
     { value: '2001', label: 'Establishment time' },
@@ -215,6 +215,8 @@ const Content = () => {
       imageHint: 'delivery truck'
     },
   ];
+  
+  const [activeQualityStep, setActiveQualityStep] = useState(qualitySteps[0]);
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -434,44 +436,103 @@ const Content = () => {
         <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
           Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
         </p>
-        <TooltipProvider>
+
+        {/* Desktop View */}
+        <div className="hidden md:grid md:grid-cols-2 gap-12 items-start">
+          <div className="flex flex-col gap-4 sticky top-28">
+            {qualitySteps.map((step) => {
+              const Icon = step.icon;
+              const isActive = activeQualityStep.id === step.id;
+              return (
+                <button
+                  key={step.id}
+                  onClick={() => setActiveQualityStep(step)}
+                  className={cn(
+                    "flex items-center gap-4 p-4 rounded-lg text-left transition-all duration-300 border-2",
+                    isActive ? "bg-card shadow-lg border-primary" : "bg-card/50 border-transparent hover:bg-card hover:shadow-md"
+                  )}
+                >
+                  <div className={cn(
+                    "w-16 h-16 rounded-full flex items-center justify-center transition-colors flex-shrink-0",
+                    isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                  )}>
+                    <Icon className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <h3 className="font-headline text-xl font-bold">{step.title}</h3>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
           <div className="relative">
-            <div className="absolute left-0 top-12 w-full h-0.5 bg-border -translate-y-px hidden md:block" />
-            
-            <div className="relative grid grid-cols-1 md:grid-cols-5 gap-y-12 md:gap-x-8">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeQualityStep.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-col gap-6"
+              >
+                {(() => {
+                    const placeholder = PlaceHolderImages.find(p => p.id === activeQualityStep.imageId);
+                    return placeholder ? (
+                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden shadow-2xl">
+                            <Image
+                                src={placeholder.imageUrl}
+                                alt={activeQualityStep.title}
+                                fill
+                                className="object-cover"
+                                data-ai-hint={placeholder.imageHint}
+                            />
+                        </div>
+                    ) : null;
+                })()}
+                <div>
+                  <h3 className="font-headline text-3xl font-bold mb-4">{activeQualityStep.title}</h3>
+                  <p className="text-muted-foreground text-lg">{activeQualityStep.description}</p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
+
+        {/* Mobile View: Accordion */}
+        <div className="md:hidden w-full">
+            <Accordion type="single" collapsible defaultValue={qualitySteps[0].id} className="w-full space-y-4">
                 {qualitySteps.map((step) => {
                     const Icon = step.icon;
                     const placeholder = PlaceHolderImages.find(p => p.id === step.imageId);
                     return (
-                        <Tooltip key={step.id}>
-                            <TooltipTrigger asChild>
-                                <div className="flex flex-col items-center text-center group cursor-pointer">
-                                    <div className="relative z-10 w-24 h-24 rounded-full bg-card border-4 border-primary flex items-center justify-center mb-4 shadow-lg transform transition-transform duration-300 group-hover:scale-110">
-                                        <Icon className="w-12 h-12 text-primary" />
-                                    </div>
-                                    <h3 className="font-headline text-xl font-bold mb-2">{step.title}</h3>
-                                    <p className="text-sm text-muted-foreground px-2">{step.description}</p>
+                        <AccordionItem value={step.id} key={step.id} className="bg-card border rounded-lg">
+                            <AccordionTrigger className="p-4 text-left hover:no-underline">
+                                <div className="flex items-center gap-4">
+                                    <Icon className="w-8 h-8 text-primary flex-shrink-0"/>
+                                    <span className="font-headline text-xl">{step.title}</span>
                                 </div>
-                            </TooltipTrigger>
-                            <TooltipContent className="p-0 border-none bg-transparent shadow-xl rounded-lg">
-                                {placeholder && (
-                                    <div className="relative w-64 h-48 rounded-lg overflow-hidden">
-                                        <Image
-                                            src={placeholder.imageUrl}
-                                            alt={step.title}
-                                            fill
-                                            className="object-cover"
-                                            data-ai-hint={placeholder.imageHint}
-                                        />
-                                    </div>
-                                )}
-                            </TooltipContent>
-                        </Tooltip>
+                            </AccordionTrigger>
+                            <AccordionContent className="p-4 pt-0">
+                                <div className="flex flex-col gap-4">
+                                    {placeholder && (
+                                        <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden">
+                                            <Image
+                                                src={placeholder.imageUrl}
+                                                alt={step.title}
+                                                fill
+                                                className="object-cover"
+                                                data-ai-hint={placeholder.imageHint}
+                                            />
+                                        </div>
+                                    )}
+                                    <p className="text-muted-foreground">{step.description}</p>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
                     )
                 })}
-            </div>
-          </div>
-        </TooltipProvider>
+            </Accordion>
+        </div>
       </div>
 
     </div>
