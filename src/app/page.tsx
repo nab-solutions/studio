@@ -7,7 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight } from 'lucide-react';
+import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 
@@ -104,13 +104,6 @@ const advantages = [
     },
 ];
 
-const StairsIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg {...props} stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 3h18v18H3zM9 9h6v6H9zM3 9h6m-6 6h6m6-6v6m0 6v-6"></path>
-    </svg>
-);
-
-
 const applicationAreasData = [
   {
     id: 'indoor-floor',
@@ -153,12 +146,12 @@ const applicationAreasData = [
     slug: 'indoor-wall'
   },
   {
-    id: 'stairs',
-    name: 'Stairs',
-    description: 'Craft elegant and long-lasting staircases with our premium stone, available in various finishes to match your design aesthetic.',
-    icon: StairsIcon,
-    imagePlaceholderId: 'application-stairs',
-    slug: 'stairs'
+    id: 'boulders',
+    name: 'Boulders',
+    description: 'Add a natural, rugged focal point to your landscape with our selection of unique boulders, perfect for gardens and outdoor features.',
+    icon: Mountain,
+    imagePlaceholderId: 'application-boulders',
+    slug: 'boulders'
   },
 ];
 

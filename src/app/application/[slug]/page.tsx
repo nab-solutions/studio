@@ -14,7 +14,7 @@ const applicationData: { [key: string]: { name: string, imageId: string, hint: s
     'outdoor-floors': { name: 'Outdoor Floors', imageId: 'application-outdoor-floor', hint: 'stone patio flooring' },
     'indoor-wall': { name: 'Indoor Wall', imageId: 'application-indoor-wall', hint: 'interior stone wall' },
     'indoor-floor': { name: 'Indoor Floor', imageId: 'application-indoor-floor', hint: 'marble floor' },
-    'stairs': { name: 'Stairs', imageId: 'application-stairs', hint: 'stone staircase' },
+    'boulders': { name: 'Boulders', imageId: 'application-boulders', hint: 'garden boulder' },
 };
 
 const galleryImageData: { [key: string]: { [key: string]: string[] } } = {
@@ -39,10 +39,10 @@ const galleryImageData: { [key: string]: { [key: string]: string[] } } = {
         marble: ['gallery-indoor-floor-marble-1', 'gallery-indoor-floor-marble-2'],
         granite: ['gallery-indoor-floor-granite-1', 'gallery-indoor-floor-granite-2'],
     },
-    'stairs': {
-        granite: ['gallery-stairs-granite-1', 'gallery-stairs-granite-2'],
-        marble: ['gallery-stairs-marble-1', 'gallery-stairs-marble-2'],
-    },
+    'boulders': {
+        sandstone: ['variant-autumn-brown', 'variant-sagar-black'],
+        basalt: ['variant-basalt'],
+    }
 };
 
 export default function ApplicationPage() {
