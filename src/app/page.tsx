@@ -7,7 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain } from 'lucide-react';
+import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain, Search, Package, ThumbsUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 
@@ -175,44 +175,45 @@ const Content = () => {
   const qualitySteps = [
     {
       id: 'sourcing',
-      title: 'SOURCING',
-      description: "We meticulously source our natural stones from the world's most reputable quarries. Our experts travel globally to select only the finest blocks, ensuring superior quality and unique character for every project.",
+      title: 'Sourcing',
+      description: "We meticulously source our natural stones from the world's most reputable quarries, selecting only the finest blocks.",
+      icon: Search,
       imageId: 'quality-sourcing',
       imageHint: 'raw stone quarry'
     },
     {
       id: 'manufacturing',
-      title: 'MANUFACTURING',
-      description: "Our state-of-the-art facility uses precision machinery to cut and shape the stone to exact specifications. Our skilled artisans then apply their craft to finish each piece, from polishing to custom edging, ensuring a flawless result.",
+      title: 'Manufacturing',
+      description: "Our state-of-the-art facility uses precision machinery to cut, shape, and finish each piece to perfection.",
+      icon: Factory,
       imageId: 'quality-manufacturing',
       imageHint: 'stone factory cutting'
     },
     {
       id: 'quality-control',
-      title: 'QUALITY CONTROL',
-      description: "Every slab undergoes a rigorous inspection process. We check for color consistency, structural integrity, and finish quality. Only stones that meet our exacting standards are approved for our clients.",
+      title: 'Quality Control',
+      description: "Every slab undergoes a rigorous inspection process to check for color consistency, integrity, and finish quality.",
+      icon: ShieldCheck,
       imageId: 'quality-control',
       imageHint: 'stone inspection'
     },
     {
       id: 'packaging-shipping',
-      title: 'PACKAGING & SHIPPING',
-      description: "Our packaging team uses robust and secure packing materials to protect stone during transit. Containers are loaded with care to minimize movement, ensuring safe delivery to destinations worldwide.",
+      title: 'Packaging & Shipping',
+      description: "Robust packaging and careful loading ensure your stone is protected during transit to destinations worldwide.",
+      icon: Package,
       imageId: 'quality-packaging',
       imageHint: 'stone shipping container'
     },
     {
       id: 'delivery-after-sales',
-      title: 'DELIVERY & AFTER SALES',
-      description: "We coordinate closely with logistics partners to ensure timely and professional delivery. Our commitment doesn't end there; we provide comprehensive after-sales support to ensure your complete satisfaction.",
+      title: 'Delivery & After Sales',
+      description: "We ensure timely delivery and provide comprehensive after-sales support to guarantee your complete satisfaction.",
+      icon: ThumbsUp,
       imageId: 'quality-delivery',
       imageHint: 'delivery truck'
     },
-];
-
-  const [activeQualityStepId, setActiveQualityStepId] = useState(qualitySteps[0].id);
-  const activeQualityStep = qualitySteps.find((step) => step.id === activeQualityStepId);
-  const activeQualityStepImage = PlaceHolderImages.find((p) => p.id === activeQualityStep?.imageId);
+  ];
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -429,51 +430,26 @@ const Content = () => {
         <h2 className="font-headline text-3xl font-bold mb-4 text-center text-foreground">
           How We Ensure Quality Stone In 5 Steps
         </h2>
-        <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
           Learn how we process stone in 5 clear steps. Understand what we do to ensure quality at every stage.
         </p>
-        <div className="w-full">
-          <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:gap-x-8 bg-transparent w-full mb-8 pb-2">
-            {qualitySteps.map((step) => (
-              <button
-                key={step.id}
-                onMouseEnter={() => setActiveQualityStepId(step.id)}
-                onClick={() => setActiveQualityStepId(step.id)}
-                className={cn(
-                  "text-muted-foreground uppercase tracking-widest text-sm whitespace-nowrap py-2 border-b-2 transition-colors",
-                  activeQualityStepId === step.id ? "border-primary text-foreground" : "border-transparent"
-                )}
-              >
-                {step.title}
-              </button>
-            ))}
+        <div className="relative">
+          <div className="absolute left-0 top-12 w-full h-0.5 bg-border -translate-y-px hidden md:block" />
+          
+          <div className="relative grid grid-cols-1 md:grid-cols-5 gap-y-12 md:gap-x-8">
+              {qualitySteps.map((step) => {
+                  const Icon = step.icon;
+                  return (
+                      <div key={step.id} className="flex flex-col items-center text-center group">
+                          <div className="relative z-10 w-24 h-24 rounded-full bg-card border-4 border-primary flex items-center justify-center mb-4 shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                              <Icon className="w-12 h-12 text-primary" />
+                          </div>
+                          <h3 className="font-headline text-xl font-bold mb-2">{step.title}</h3>
+                          <p className="text-sm text-muted-foreground px-2">{step.description}</p>
+                      </div>
+                  )
+              })}
           </div>
-          <motion.div
-            key={activeQualityStepId}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="mt-12"
-          >
-            {activeQualityStep && (
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center max-w-6xl mx-auto">
-                  <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg md:col-span-3">
-                    {activeQualityStepImage && (
-                      <Image
-                        src={activeQualityStepImage.imageUrl}
-                        alt={activeQualityStep.title}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={activeQualityStepImage.imageHint}
-                      />
-                    )}
-                  </div>
-                  <div className="md:col-span-2">
-                    <p className="text-lg text-muted-foreground">{activeQualityStep.description}</p>
-                  </div>
-                </div>
-            )}
-          </motion.div>
         </div>
       </div>
 
