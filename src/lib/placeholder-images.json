@@ -3,433 +3,433 @@
     {
       "id": "video-poster",
       "description": "Poster image for the video hero component, showing Earth from space.",
-      "imageUrl": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3BhY2UlMjBlYXJ0aHxlbnwwfHx8fDE3Njg1NzIwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/video-poster.jpg",
       "imageHint": "space earth"
     },
     {
       "id": "video-background",
       "description": "Background image for the video hero, showing a starry galaxy.",
-      "imageUrl": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYWxheHklMjBzdGFyc3xlbnwwfHx8fDE3Njg0ODc1OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/video-background.jpg",
       "imageHint": "galaxy stars"
     },
     {
       "id": "image-src",
       "description": "Main image for the image hero component, showing a sandstone canyon.",
-      "imageUrl": "https://images.unsplash.com/photo-1530328455138-005086c2393c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYW5kc3RvbmUlMjB3YWxsfGVufDB8fHx8MTc2ODU3MzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/image-src.jpg",
       "imageHint": "sandstone wall"
     },
     {
       "id": "image-background",
       "description": "Background image for the image hero, showing a desert landscape.",
-      "imageUrl": "https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNlcnQlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY4OTkyOTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/image-background.jpg",
       "imageHint": "desert landscape"
     },
     {
       "id": "category-sandstone",
       "description": "Image for sandstone product category.",
-      "imageUrl": "https://images.unsplash.com/photo-1530328455138-005086c2393c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYW5kc3RvbmUlMjB3YWxsfGVufDB8fHx8MTc2ODU3MzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/category-sandstone.jpg",
       "imageHint": "sandstone wall"
     },
     {
       "id": "category-crazy-stone",
       "description": "Image for Crazy Stone product category.",
-      "imageUrl": "https://images.unsplash.com/photo-1705498710951-fffc4c2422dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmF6eSUyMHBhdmluZ3xlbnwwfHx8fDE3NzA1NDI4OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/category-crazy-stone.jpg",
       "imageHint": "crazy paving"
     },
     {
       "id": "category-rockface-stone",
       "description": "Image for Rockface Stone product category.",
-      "imageUrl": "https://images.unsplash.com/photo-1729445296757-3e96ca46df78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyb2NrZmFjZSUyMHdhbGx8ZW58MHx8fHwxNzcwNTQyODkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/category-rockface-stone.jpg",
       "imageHint": "rockface wall"
     },
     {
       "id": "category-stepping-stone",
       "description": "Image for Stepping Stone product category.",
-      "imageUrl": "https://images.unsplash.com/photo-1629076401272-2c95d118fec3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdGVwcGluZyUyMHN0b25lc3xlbnwwfHx8fDE3NzA1NDI4OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/category-stepping-stone.jpg",
       "imageHint": "stepping stones"
     },
     {
       "id": "variant-black-pearl",
       "description": "Image for Black Pearl granite variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibGFjayUyMGdyYW5pdGV8ZW58MHx8fHwxNzY4NTcyODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-black-pearl.jpg",
       "imageHint": "black granite"
     },
     {
       "id": "variant-ubatuba",
       "description": "Image for Ubatuba granite variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1739388159368-59ace93ea2cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxncmVlbiUyMGdyYW5pdGV8ZW58MHx8fHwxNzY4NTcyODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-ubatuba.jpg",
       "imageHint": "green granite"
     },
     {
       "id": "variant-kashmir-white",
       "description": "Image for Kashmir White granite variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1733085097228-548654f926c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3aGl0ZSUyMGdyYW5pdGV8ZW58MHx8fHwxNzY4NTcyODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-kashmir-white.jpg",
       "imageHint": "white granite"
     },
     {
       "id": "variant-taj-mahal",
       "description": "Image for Taj Mahal quartzite variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1760651691818-e13e65286d72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWlnZSUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-taj-mahal.jpg",
       "imageHint": "beige quartzite"
     },
     {
       "id": "variant-super-white",
       "description": "Image for Super White quartzite variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1760651913970-98e38bd28f77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3aGl0ZSUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-super-white.jpg",
       "imageHint": "white quartzite"
     },
     {
       "id": "variant-sea-pearl",
       "description": "Image for Sea Pearl quartzite variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1542300813-4d6f9d5758b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmVlbiUyMHF1YXJ0eml0ZXxlbnwwfHx8fDE3Njg1NzI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-sea-pearl.jpg",
       "imageHint": "green quartzite"
     },
     {
       "id": "variant-stepping-round",
       "description": "Image for Round Stepping Stone variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1699551124241-b6bdd4cd26ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyb3VuZCUyMHN0ZXBwaW5nJTIwc3RvbmV8ZW58MHx8fHwxNzcwNTQyODkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-stepping-round.jpg",
       "imageHint": "round stepping stone"
     },
     {
       "id": "variant-stepping-square",
       "description": "Image for Square Stepping Stone variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1746122156310-4a711504d550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzcXVhcmUlMjBzdGVwcGluZyUyMHN0b25lfGVufDB8fHx8MTc3MDU0Mjg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-stepping-square.jpg",
       "imageHint": "square stepping stone"
     },
     {
       "id": "variant-stepping-irregular",
       "description": "Image for Irregular Stepping Stone variant.",
-      "imageUrl": "https://images.unsplash.com/photo-1649294012763-88d48e617b72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpcnJlZ3VsYXIlMjBzdGVwcGluZyUyMHN0b25lfGVufDB8fHx8MTc3MDU0Mjg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-stepping-irregular.jpg",
       "imageHint": "irregular stepping stone"
     },
     {
       "id": "variant-dholpur-beige",
       "description": "Image for Dholpur Beige sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1687800392043-d9fd4fbb9558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWlnZSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-dholpur-beige.jpg",
       "imageHint": "beige sandstone"
     },
     {
       "id": "variant-jodhpur",
       "description": "Image for Jodhpur sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1762370893038-67f1f046ec37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxqb2RocHVyJTIwc3RvbmV8ZW58MHx8fHwxNzY4NTczNjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-jodhpur.jpg",
       "imageHint": "jodhpur stone"
     },
     {
       "id": "variant-basalt",
       "description": "Image for Basalt stone.",
-      "imageUrl": "https://images.unsplash.com/photo-1652047239861-4c8d5f53efaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYXNhbHQlMjByb2NrfGVufDB8fHx8MTc2ODU3MzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-basalt.jpg",
       "imageHint": "basalt rock"
     },
     {
       "id": "variant-autumn-brown",
       "description": "Image for Autumn Brown sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1691337976804-16de6820f40c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicm93biUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-autumn-brown.jpg",
       "imageHint": "brown sandstone"
     },
     {
       "id": "variant-teakwood-yellow",
       "description": "Image for Teakwood Yellow sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1687800289759-4f9b23b1eebc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5ZWxsb3clMjBzYW5kc3RvbmV8ZW58MHx8fHwxNzY4NTczNjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-teakwood-yellow.jpg",
       "imageHint": "yellow sandstone"
     },
     {
       "id": "variant-teakwood-beige",
       "description": "Image for Teakwood Beige sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1687800410096-7d11edf87af2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiZWlnZSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-teakwood-beige.jpg",
       "imageHint": "beige sandstone"
     },
     {
       "id": "variant-indian-mocha",
       "description": "Image for Indian Mocha sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1733109069611-ac845c43db24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxicm93biUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-indian-mocha.jpg",
       "imageHint": "brown sandstone"
     },
     {
       "id": "variant-gwalior-mint",
       "description": "Image for Gwalior Mint sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1710241426974-f64b42dd692d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaW50JTIwc2FuZHN0b25lfGVufDB8fHx8MTc2ODU3MzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-gwalior-mint.jpg",
       "imageHint": "mint sandstone"
     },
     {
       "id": "variant-sagar-black",
       "description": "Image for Sagar Black sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1522032183912-b0363624909d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibGFjayUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-sagar-black.jpg",
       "imageHint": "black sandstone"
     },
     {
       "id": "variant-kandla-grey",
       "description": "Image for Kandla Grey sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1737034164564-5b915f64e18a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JleSUyMHNhbmRzdG9uZXxlbnwwfHx8fDE3Njg1NzM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/variant-kandla-grey.jpg",
       "imageHint": "grey sandstone"
     },
     {
       "id": "about-us-home",
       "description": "Image for the About Us section on the home page.",
-      "imageUrl": "https://images.unsplash.com/photo-1680781336783-8382d382e892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwb2ZmaWNlfGVufDB8fHx8MTc2ODU3NDM0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/about-us-home.jpg",
       "imageHint": "company office"
     },
     {
       "id": "about-us-page",
       "description": "Image for the main About Us page.",
-      "imageUrl": "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3Njg0NjgxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/about-us-page.jpg",
       "imageHint": "team meeting"
     },
     {
       "id": "about-commitment",
       "description": "Image for the About Us details page.",
-      "imageUrl": "https://images.unsplash.com/photo-1767040362163-f1b833b14ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdG9uZSUyMGNyYWZ0c21hbnNoaXB8ZW58MHx8fHwxNzY4NTc0MzQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/about-commitment.jpg",
       "imageHint": "stone craftsmanship"
     },
     {
       "id": "advantage-mass-production",
       "description": "Image for mass production advantage, showing stone cutting.",
-      "imageUrl": "https://images.unsplash.com/photo-1603561117745-b1fc134ed79d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdG9uZSUyMGN1dHRpbmd8ZW58MHx8fHwxNzY5NjgxNzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/advantage-mass-production.jpg",
       "imageHint": "stone cutting"
     },
     {
       "id": "advantage-rich-export",
       "description": "Image for rich export experience advantage, showing marble slabs.",
-      "imageUrl": "https://images.unsplash.com/photo-1594720466763-08d965670e4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYXJibGUlMjBzbGFic3xlbnwwfHx8fDE3Njk2Mjc5MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/advantage-rich-export.jpg",
       "imageHint": "marble slabs"
     },
     {
       "id": "advantage-quality-assurance",
       "description": "Image for quality assurance advantage, showing quality inspection.",
-      "imageUrl": "https://images.unsplash.com/photo-1738000527433-09cfcb0ce221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdG9uZSUyMGluc3BlY3Rpb258ZW58MHx8fHwxNzY5NjgxNzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/advantage-quality-assurance.jpg",
       "imageHint": "stone inspection"
     },
     {
       "id": "advantage-logistics",
       "description": "Image for logistics and services advantage, showing a cargo ship.",
-      "imageUrl": "https://images.unsplash.com/photo-1670121180530-cfcba4438038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYXJnbyUyMHNoaXB8ZW58MHx8fHwxNzY5NjE2MjI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/advantage-logistics.jpg",
       "imageHint": "cargo ship"
     },
     {
       "id": "application-building-facade",
       "description": "Image for building facade application.",
-      "imageUrl": "https://images.unsplash.com/photo-1617464724213-5705303799d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdG9uZSUyMGZhaWNhZGV8ZW58MHx8fHwxNzE5OTk4ODgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/application-building-facade.jpg",
       "imageHint": "stone facade"
     },
     {
       "id": "application-garden-landscape",
       "description": "Image for garden landscape application.",
-      "imageUrl": "https://images.unsplash.com/photo-1541696491614-72a3b09068ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBzdG9uZSUyMHBhdGh8ZW58MHx8fHwxNzE5OTk4OTQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/application-garden-landscape.jpg",
       "imageHint": "garden stone"
     },
     {
       "id": "application-outdoor-floor",
       "description": "Image for outdoor floor application.",
-      "imageUrl": "https://images.unsplash.com/photo-1599933571988-75d8787877b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHBhdGlvfGVufDB8fHx8MTcxOTk5ODk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/application-outdoor-floor.jpg",
       "imageHint": "stone patio"
     },
     {
       "id": "application-indoor-wall",
       "description": "Image for indoor wall application.",
-      "imageUrl": "https://images.unsplash.com/photo-1574889613146-551187428f5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMHN0b25lJTIwd2FsbHxlbnwwfHx8fDE3MTk5OTkwMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/application-indoor-wall.jpg",
       "imageHint": "interior stone"
     },
     {
       "id": "application-indoor-floor",
       "description": "Image for indoor floor application.",
-      "imageUrl": "https://images.unsplash.com/photo-1618220252344-8ec9162028d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJibGUlMjBiYXRocm9vbSUyMGZsb29yfGVufDB8fHx8MTcxOTk5OTAyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/application-indoor-floor.jpg",
       "imageHint": "marble bathroom"
     },
     {
       "id": "application-boulders",
       "description": "Image for boulders application area.",
-      "imageUrl": "https://images.unsplash.com/photo-1559416518-a5f75cc755f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBib3VsZGVyfGVufDB8fHx8fDE3MjM4MjQyODR8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/application-boulders.jpg",
       "imageHint": "garden boulder"
     },
     {
       "id": "gallery-facade-sandstone-1",
       "description": "Image of a building facade with sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1635602678578-ab6b6f99daab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYW5kc3RvbmUlMjBmYWNhZGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-facade-sandstone-1.jpg",
       "imageHint": "sandstone facade"
     },
     {
       "id": "gallery-facade-sandstone-2",
       "description": "Image of a modern building with sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1665402295475-21a4096091e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBzYW5kc3RvbmV8ZW58MHx8fHwxNzY5Njg0MDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-facade-sandstone-2.jpg",
       "imageHint": "modern sandstone"
     },
     {
       "id": "gallery-facade-granite-1",
       "description": "Image of a building facade with granite.",
-      "imageUrl": "https://images.unsplash.com/photo-1667754187232-7e42240f6edd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmFuaXRlJTIwZmFjYWRlfGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-facade-granite-1.jpg",
       "imageHint": "granite facade"
     },
     {
       "id": "gallery-facade-granite-2",
       "description": "Image of a polished granite building exterior.",
-      "imageUrl": "https://images.unsplash.com/photo-1527035757893-10e604670b78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb2xpc2hlZCUyMGdyYW5pdGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-facade-granite-2.jpg",
       "imageHint": "polished granite"
     },
     {
       "id": "gallery-facade-marble-1",
       "description": "Image of a building facade with marble.",
-      "imageUrl": "https://images.unsplash.com/photo-1764511264860-f8308f9d2264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXJibGUlMjBmYWNhZGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-facade-marble-1.jpg",
       "imageHint": "marble facade"
     },
     {
       "id": "gallery-facade-marble-2",
       "description": "Image of a classic building with marble.",
-      "imageUrl": "https://images.unsplash.com/photo-1767554261805-95185e9ecf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2xhc3NpYyUyMG1hcmJsZXxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-facade-marble-2.jpg",
       "imageHint": "classic marble"
     },
     {
       "id": "gallery-garden-sandstone-1",
       "description": "Image of a garden path with sandstone.",
-      "imageUrl": "https://images.unsplash.com/photo-1718044649900-b20730806c61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzYW5kc3RvbmUlMjBwYXRofGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-garden-sandstone-1.jpg",
       "imageHint": "sandstone path"
     },
     {
       "id": "gallery-garden-sandstone-2",
       "description": "Image of sandstone in a garden landscape.",
-      "imageUrl": "https://images.unsplash.com/photo-1660232370139-d38f527522fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnYXJkZW4lMjBzdG9uZXxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-garden-sandstone-2.jpg",
       "imageHint": "garden stone"
     },
     {
       "id": "gallery-garden-slate-1",
       "description": "Image of a garden path with slate.",
-      "imageUrl": "https://images.unsplash.com/photo-1600410687119-2abee258c913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbGF0ZSUyMHBhdGh8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-garden-slate-1.jpg",
       "imageHint": "slate path"
     },
     {
       "id": "gallery-garden-slate-2",
       "description": "Image of slate in a garden landscape.",
-      "imageUrl": "https://images.unsplash.com/photo-1680026548022-e76f693d0a62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXJrJTIwc3RvbmV8ZW58MHx8fHwxNzY5Njg0MDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-garden-slate-2.jpg",
       "imageHint": "dark stone"
     },
     {
       "id": "gallery-outdoor-sandstone-1",
       "description": "Image of an outdoor floor with sandstone.",
-      "imageUrl": "https://picsum.photos/seed/goss1/800/600",
+      "imageUrl": "/gallery-outdoor-sandstone-1.jpg",
       "imageHint": "sandstone patio"
     },
     {
       "id": "gallery-outdoor-sandstone-2",
       "description": "Image of a sandstone pool deck.",
-      "imageUrl": "https://images.unsplash.com/photo-1602774895312-f002b8f2f33b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb29sJTIwZGVja3xlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-outdoor-sandstone-2.jpg",
       "imageHint": "pool deck"
     },
     {
       "id": "gallery-outdoor-granite-1",
       "description": "Image of an outdoor floor with granite.",
-      "imageUrl": "https://images.unsplash.com/photo-1604762537282-b64715e17b6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncmFuaXRlJTIwcGF2aW5nfGVufDB8fHx8MTc2OTY4NDAwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-outdoor-granite-1.jpg",
       "imageHint": "granite paving"
     },
     {
       "id": "gallery-outdoor-granite-2",
       "description": "Image of outdoor granite flooring.",
-      "imageUrl": "https://images.unsplash.com/photo-1715934514075-06f0dbda1c09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b3V0ZG9vciUyMGdyYW5pdGV8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-outdoor-granite-2.jpg",
       "imageHint": "outdoor granite"
     },
     {
       "id": "gallery-indoor-wall-marble-1",
       "description": "Image of an indoor wall with marble.",
-      "imageUrl": "https://images.unsplash.com/photo-1656147173067-2022b4ab3cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFyYmxlJTIwd2FsbHxlbnwwfHx8fDE3Njk1ODI0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-wall-marble-1.jpg",
       "imageHint": "marble wall"
     },
     {
       "id": "gallery-indoor-wall-marble-2",
       "description": "Image of a luxury interior with a marble wall.",
-      "imageUrl": "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjBpbnRlcmlvcnxlbnwwfHx8fDE3Njk2NTc1MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-wall-marble-2.jpg",
       "imageHint": "luxury interior"
     },
     {
       "id": "gallery-indoor-wall-quartzite-1",
       "description": "Image of an indoor wall with quartzite.",
-      "imageUrl": "https://images.unsplash.com/photo-1710580889895-1cc86427be65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxxdWFydHppdGUlMjB3YWxsfGVufDB8fHx8MTc2OTY4NDAwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-wall-quartzite-1.jpg",
       "imageHint": "quartzite wall"
     },
     {
       "id": "gallery-indoor-wall-quartzite-2",
       "description": "Image of a quartzite accent wall.",
-      "imageUrl": "https://images.unsplash.com/photo-1632210826643-9ff7e84be2f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NlbnQlMjB3YWxsfGVufDB8fHx8MTc2OTY4NDAwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-wall-quartzite-2.jpg",
       "imageHint": "accent wall"
     },
     {
       "id": "gallery-indoor-floor-marble-1",
       "description": "Image of an indoor floor with marble.",
-      "imageUrl": "https://images.unsplash.com/photo-1591899916510-d8eea9eb7b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXJibGUlMjBmbG9vcnxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-floor-marble-1.jpg",
       "imageHint": "marble floor"
     },
     {
       "id": "gallery-indoor-floor-marble-2",
       "description": "Image of a polished marble floor.",
-      "imageUrl": "https://images.unsplash.com/photo-1739272135743-09de13555560?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb2xpc2hlZCUyMG1hcmJsZXxlbnwwfHx8fDE3Njk2ODQwMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-floor-marble-2.jpg",
       "imageHint": "polished marble"
     },
     {
       "id": "gallery-indoor-floor-granite-1",
       "description": "Image of an indoor floor with granite.",
-      "imageUrl": "https://images.unsplash.com/photo-1647439771408-8a9957477438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxncmFuaXRlJTIwZmxvb3J8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-floor-granite-1.jpg",
       "imageHint": "granite floor"
     },
     {
       "id": "gallery-indoor-floor-granite-2",
       "description": "Image of a dark granite floor.",
-      "imageUrl": "https://images.unsplash.com/photo-1643763630190-ed48b2ab44a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXJrJTIwZmxvb3J8ZW58MHx8fHwxNzY5Njg0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery-indoor-floor-granite-2.jpg",
       "imageHint": "dark floor"
     },
     {
       "id": "quality-sourcing",
       "description": "Image for the sourcing step in quality assurance.",
-      "imageUrl": "https://images.unsplash.com/photo-1574047473523-8334c1b40590?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyYXclMjBzdG9uZSUyMHF1YXJyeXxlbnwwfHx8fDE3MjAyNTg2MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/quality-sourcing.jpg",
       "imageHint": "raw stone quarry"
     },
     {
       "id": "quality-manufacturing",
       "description": "Image for the manufacturing step in quality assurance.",
-      "imageUrl": "https://images.unsplash.com/photo-1629792023595-65c363b9f5d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMGZhY3RvcnklMjBjdXR0aW5nfGVufDB8fHx8MTcyMDI1ODczN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/quality-manufacturing.jpg",
       "imageHint": "stone factory cutting"
     },
     {
       "id": "quality-control",
       "description": "Image for the quality control step in quality assurance.",
-      "imageUrl": "https://images.unsplash.com/photo-1738000527433-09cfcb0ce221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdG9uZSUyMGluc3BlY3Rpb258ZW58MHx8fHwxNzY5NjgxNzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/quality-control.jpg",
       "imageHint": "stone inspection"
     },
     {
       "id": "quality-packaging",
       "description": "Image for the packaging and shipping step in quality assurance.",
-      "imageUrl": "https://images.unsplash.com/photo-1627914652150-12002b8e3e48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdG9uZSUyMHNoaXBwaW5nJTIwY29udGFpbmVyfGVufDB8fHx8MTcyMDI1ODc2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/quality-packaging.jpg",
       "imageHint": "stone shipping"
     },
     {
       "id": "quality-delivery",
       "description": "Image for the delivery and after sales step in quality assurance.",
-      "imageUrl": "https://images.unsplash.com/photo-1587574293340-90117c059c98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZWxpdmVyeSUyMHRydWNrfGVufDB8fHx8MTcyMDI1ODc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/quality-delivery.jpg",
       "imageHint": "delivery truck"
     },
     {
       "id": "footer-background",
       "description": "White marble texture for the footer background.",
-      "imageUrl": "https://images.unsplash.com/photo-1560961913-c9e2d5f073f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aGl0ZSUyMG1hcmJsZSUyMHRleHR1cmV8ZW58MHx8fHwxNzIyMzg0MjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/footer-background.jpg",
       "imageHint": "white marble"
     },
     {
       "id": "variant-mandana-red",
       "description": "Image for Mandana Red stone.",
-      "imageUrl": "https://images.unsplash.com/photo-1579169825453-3d6118d3562b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWQlMjBzdG9uZXxlbnwwfHx8fDE3MjM3ODk2MTR8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/variant-mandana-red.jpg",
       "imageHint": "red stone"
     },
     {
       "id": "variant-kota-brown",
       "description": "Image for Kota Stone Brown.",
-      "imageUrl": "https://images.unsplash.com/photo-1580833890886-444731804153?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicm93biUyMHN0b25lJTIwdGV4dHVyZXxlbnwwfHx8fDE3MjM3ODk2NDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/variant-kota-brown.jpg",
       "imageHint": "brown stone"
     },
     {
       "id": "variant-kota-grey",
       "description": "Image for Kota Stone Grey.",
-      "imageUrl": "https://images.unsplash.com/photo-1563379926-88796f6a472a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmV5JTIwc3RvbmUlMjB0ZXh0dXJlfGVufDB8fHx8fDE3MjM3ODk2NjN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/variant-kota-grey.jpg",
       "imageHint": "grey stone"
     },
     {
       "id": "variant-kota-yellow",
       "description": "Image for Kota Stone Yellow.",
-      "imageUrl": "https://images.unsplash.com/photo-1579548122391-4c134d1a43a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5ZWxsb3clMjBzdG9uZSUyMHRleHR1cmV8ZW58MHx8fHwxNzIzNzg5NjgxfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/variant-kota-yellow.jpg",
       "imageHint": "yellow stone"
     }
   ]
