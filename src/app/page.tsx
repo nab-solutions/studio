@@ -60,13 +60,17 @@ const productCategories = [
         id: 'category-sandstone',
     },
     {
-        name: 'Granite',
-        id: 'category-granite',
+        name: 'Crazy Stone',
+        id: 'category-crazy-stone',
     },
     {
-        name: 'Quartzite',
-        id: 'category-quartzite',
+        name: 'Rockface Stone',
+        id: 'category-rockface-stone',
     },
+    {
+        name: 'Stepping Stone',
+        id: 'category-stepping-stone',
+    }
 ];
 
 const advantages = [
@@ -223,11 +227,11 @@ const Content = () => {
         <h2 className="font-headline text-3xl font-bold mb-10 text-center text-foreground">
           Product Categories
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {productCategories.map((category) => {
                 const placeholder = PlaceHolderImages.find(p => p.id === category.id);
                 return (
-                    <Link key={category.name} href={`/category/${category.name.toLowerCase()}`}>
+                    <Link key={category.name} href={`/category/${category.name.toLowerCase().replace(/ /g, '-')}`}>
                         <Card className="overflow-hidden bg-card cursor-pointer hover:shadow-lg transition-shadow duration-300">
                             <CardHeader className="p-0">
                                 <div className="relative h-48 w-full">

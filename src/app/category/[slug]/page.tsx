@@ -20,21 +20,27 @@ const products = {
         { name: 'Sagar Black', id: 'variant-sagar-black', application: 'Wall/Floor' },
         { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
     ],
-    granite: [
-        { name: 'Black Pearl', id: 'variant-black-pearl', application: 'Countertops' },
-        { name: 'Ubatuba', id: 'variant-ubatuba', application: 'Countertops' },
-        { name: 'Kashmir White', id: 'variant-kashmir-white', application: 'Countertops' },
+    'crazy-stone': [
+        { name: 'Black Pearl', id: 'variant-black-pearl', application: 'Paving' },
+        { name: 'Ubatuba', id: 'variant-ubatuba', application: 'Paving' },
+        { name: 'Kashmir White', id: 'variant-kashmir-white', application: 'Paving' },
     ],
-    quartzite: [
-        { name: 'Taj Mahal', id: 'variant-taj-mahal', application: 'Countertops' },
-        { name: 'Super White', id: 'variant-super-white', application: 'Countertops' },
-        { name: 'Sea Pearl', id: 'variant-sea-pearl', application: 'Countertops' },
+    'rockface-stone': [
+        { name: 'Taj Mahal', id: 'variant-taj-mahal', application: 'Walls' },
+        { name: 'Super White', id: 'variant-super-white', application: 'Walls' },
+        { name: 'Sea Pearl', id: 'variant-sea-pearl', application: 'Walls' },
     ],
+    'stepping-stone': [
+        { name: 'Round Stepping Stone', id: 'variant-stepping-round', application: 'Garden' },
+        { name: 'Square Stepping Stone', id: 'variant-stepping-square', application: 'Garden' },
+        { name: 'Irregular Stepping Stone', id: 'variant-stepping-irregular', application: 'Garden' },
+    ]
 };
 
 export default function CategoryPage() {
     const params = useParams();
     const category = params.slug as string;
+    const categoryTitle = category.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
     const variants = products[category as keyof typeof products] || [];
     const categoryImage = PlaceHolderImages.find(p => p.id === `category-${category}`);
 
@@ -54,7 +60,7 @@ export default function CategoryPage() {
                 <div className="container mx-auto py-12 px-4">
                     <div className="flex justify-between items-center gap-8">
                         <div>
-                            <h1 className="text-5xl font-headline capitalize text-card-foreground">{category}</h1>
+                            <h1 className="text-5xl font-headline text-card-foreground">{categoryTitle}</h1>
                             <Link href="/" passHref>
                                 <Button variant="link" className="mt-2 pl-0 text-primary hover:text-primary/80">Back to Home</Button>
                             </Link>
@@ -63,7 +69,7 @@ export default function CategoryPage() {
                              <div className="w-48 h-32 relative rounded-lg overflow-hidden shadow-md hidden md:block">
                                 <Image
                                     src={categoryImage.imageUrl}
-                                    alt={category}
+                                    alt={categoryTitle}
                                     fill
                                     className="object-cover"
                                     data-ai-hint={categoryImage.imageHint}

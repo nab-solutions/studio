@@ -17,8 +17,9 @@ const socialLinks = [
 
 const productLinks = [
     { name: 'Sandstone', href: '/category/sandstone' },
-    { name: 'Granite', href: '/category/granite' },
-    { name: 'Quartzite', href: '/category/quartzite' },
+    { name: 'Crazy Stone', href: '/category/crazy-stone' },
+    { name: 'Rockface Stone', href: '/category/rockface-stone' },
+    { name: 'Stepping Stone', href: '/category/stepping-stone' },
 ];
 
 const navLinks = [
