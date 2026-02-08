@@ -21,9 +21,6 @@ const products = {
         { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
     ],
     'crazy-stone': [
-        { name: 'Black Pearl', id: 'variant-black-pearl', application: 'Paving' },
-        { name: 'Ubatuba', id: 'variant-ubatuba', application: 'Paving' },
-        { name: 'Kashmir White', id: 'variant-kashmir-white', application: 'Paving' },
         { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
         { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
         { name: 'Mandana Red', id: 'variant-mandana-red', application: 'Floor/Wall' },
@@ -33,9 +30,6 @@ const products = {
         { name: 'Basalt Stone', id: 'variant-basalt', application: 'Floor/Wall' },
     ],
     'rockface-stone': [
-        { name: 'Taj Mahal', id: 'variant-taj-mahal', application: 'Walls' },
-        { name: 'Super White', id: 'variant-super-white', application: 'Walls' },
-        { name: 'Sea Pearl', id: 'variant-sea-pearl', application: 'Walls' },
         { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
         { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
         { name: 'Mandana Red', id: 'variant-mandana-red', application: 'Floor/Wall' },
@@ -45,9 +39,6 @@ const products = {
         { name: 'Basalt Stone', id: 'variant-basalt', application: 'Floor/Wall' },
     ],
     'stepping-stone': [
-        { name: 'Round Stepping Stone', id: 'variant-stepping-round', application: 'Garden' },
-        { name: 'Square Stepping Stone', id: 'variant-stepping-square', application: 'Garden' },
-        { name: 'Irregular Stepping Stone', id: 'variant-stepping-irregular', application: 'Garden' },
         { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
         { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
         { name: 'Mandana Red', id: 'variant-mandana-red', application: 'Floor/Wall' },
