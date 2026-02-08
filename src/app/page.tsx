@@ -552,43 +552,21 @@ const Content = () => {
 };
 
 export default function Home() {
-  const [mediaType, setMediaType] = useState<'video' | 'image'>('image');
-  const [currentMedia, setCurrentMedia] = useState(sampleMediaContent[mediaType]);
+  const mediaType = 'image';
+  const currentMedia = sampleMediaContent[mediaType];
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
+    window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    setCurrentMedia(sampleMediaContent[mediaType]);
-  }, [mediaType]);
-  
   if (!isMounted) {
     return <div className="min-h-screen bg-background" />;
   }
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="fixed top-4 right-4 z-50 flex gap-2">
-        <Button
-          onClick={() => setMediaType('video')}
-          variant={mediaType === 'video' ? 'secondary' : 'outline'}
-          className={mediaType !== 'video' ? 'text-white border-white/30 hover:bg-white/20 hover:text-white' : ''}
-        >
-          Video
-        </Button>
-
-        <Button
-          onClick={() => setMediaType('image')}
-          variant={mediaType === 'image' ? 'secondary' : 'outline'}
-          className={mediaType !== 'image' ? 'text-white border-white/30 hover:bg-white/20 hover:text-white' : ''}
-        >
-          Image
-        </Button>
-      </div>
-
       <ScrollExpandMedia
         key={mediaType}
         mediaType={mediaType}
