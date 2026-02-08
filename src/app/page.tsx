@@ -439,74 +439,76 @@ const Content = () => {
 
         {/* Desktop View */}
         <div className="hidden md:grid md:grid-cols-2 gap-12 items-start">
-          <div className="sticky top-28">
-            <div className="relative pl-12 pr-4">
-              <div className="absolute left-6 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
-              <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-4">
                 {qualitySteps.map((step) => {
-                  const Icon = step.icon;
-                  const isActive = activeQualityStep.id === step.id;
-                  return (
-                    <div key={step.id} className="relative">
-                      <div className={cn(
-                        "absolute left-6 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-4 border-background bg-muted transition-all duration-300",
-                        isActive && "bg-primary scale-125"
-                      )}></div>
-                      <button
-                        onClick={() => setActiveQualityStep(step)}
-                        className={cn(
-                          "flex items-center gap-4 p-4 rounded-lg text-left transition-all duration-300 border-2 w-full",
-                          isActive ? "bg-card shadow-lg border-primary" : "bg-background/50 border-transparent hover:bg-card hover:shadow-md"
-                        )}
-                      >
+                const Icon = step.icon;
+                const isActive = activeQualityStep.id === step.id;
+                return (
+                    <button
+                    key={step.id}
+                    onClick={() => setActiveQualityStep(step)}
+                    className={cn(
+                        "group relative p-6 rounded-lg text-left transition-all duration-300 w-full",
+                        isActive ? "bg-card shadow-xl" : "hover:bg-card/80"
+                    )}
+                    >
+                    <div className="flex items-center gap-6">
                         <div className={cn(
-                          "w-16 h-16 rounded-full flex items-center justify-center transition-colors flex-shrink-0",
-                          isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                        "w-16 h-16 rounded-full flex items-center justify-center transition-colors flex-shrink-0",
+                        isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
                         )}>
-                          <Icon className="w-8 h-8" />
+                        <Icon className="w-8 h-8" />
                         </div>
                         <div>
-                          <h3 className="font-headline text-xl font-bold">{step.title}</h3>
+                        <h3 className="font-headline text-xl font-bold">{step.title}</h3>
+                        <AnimatePresence>
+                        {isActive && (
+                            <motion.p
+                            initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                            animate={{ opacity: 1, height: 'auto', marginTop: '0.5rem' }}
+                            exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="text-sm text-muted-foreground"
+                            >
+                            {step.description}
+                            </motion.p>
+                        )}
+                        </AnimatePresence>
                         </div>
-                      </button>
                     </div>
-                  );
+                    </button>
+                );
                 })}
-              </div>
             </div>
-          </div>
-          <div className="relative">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeQualityStep.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="flex flex-col gap-6"
-              >
-                {(() => {
-                    const placeholder = PlaceHolderImages.find(p => p.id === activeQualityStep.imageId);
-                    return placeholder ? (
-                        <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden shadow-2xl">
-                            <Image
-                                src={placeholder.imageUrl}
-                                alt={activeQualityStep.title}
-                                fill
-                                className="object-cover"
-                                data-ai-hint={placeholder.imageHint}
-                            />
-                        </div>
-                    ) : null;
-                })()}
-                <div>
-                  <h3 className="font-headline text-3xl font-bold mb-4">{activeQualityStep.title}</h3>
-                  <p className="text-muted-foreground text-lg">{activeQualityStep.description}</p>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
+            <div className="relative sticky top-28 h-[500px]">
+                <AnimatePresence>
+                    <motion.div
+                        key={activeQualityStep.id}
+                        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95, y: -20 }}
+                        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                        className="absolute inset-0"
+                    >
+                        {(() => {
+                            const placeholder = PlaceHolderImages.find(p => p.id === activeQualityStep.imageId);
+                            return placeholder ? (
+                                <div className="relative w-full h-full rounded-xl overflow-hidden shadow-2xl">
+                                    <Image
+                                        src={placeholder.imageUrl}
+                                        alt={activeQualityStep.title}
+                                        fill
+                                        className="object-cover"
+                                        data-ai-hint={placeholder.imageHint}
+                                    />
+                                </div>
+                            ) : null;
+                        })()}
+                    </motion.div>
+                </AnimatePresence>
+            </div>
         </div>
+
 
         {/* Mobile View: Accordion */}
         <div className="md:hidden w-full">
