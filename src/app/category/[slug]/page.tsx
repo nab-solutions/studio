@@ -1,3 +1,4 @@
+
 'use client';
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -6,54 +7,13 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
-
-const products = {
-    sandstone: [
-        { name: 'Dholpur Beige', id: 'variant-dholpur-beige', application: 'Floor/Wall' },
-        { name: 'Jodhpur', id: 'variant-jodhpur', application: 'Walls' },
-        { name: 'Basalt', id: 'variant-basalt', application: 'Floor/Wall' },
-        { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
-        { name: 'Teakwood Yellow', id: 'variant-teakwood-yellow', application: 'Wall' },
-        { name: 'Teakwood Beige', id: 'variant-teakwood-beige', application: 'Wall' },
-        { name: 'Indian Mocha', id: 'variant-indian-mocha', application: 'Wall' },
-        { name: 'Gwalior Mint', id: 'variant-gwalior-mint', application: 'Wall' },
-        { name: 'Sagar Black', id: 'variant-sagar-black', application: 'Wall/Floor' },
-        { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
-    ],
-    'crazy-stone': [
-        { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
-        { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
-        { name: 'Mandana Red', id: 'variant-mandana-red', application: 'Floor/Wall' },
-        { name: 'Kota Stone Brown', id: 'variant-kota-brown', application: 'Floor' },
-        { name: 'Kota Stone Grey', id: 'variant-kota-grey', application: 'Floor' },
-        { name: 'Kota Stone Yellow', id: 'variant-kota-yellow', application: 'Floor' },
-        { name: 'Basalt Stone', id: 'variant-basalt', application: 'Floor/Wall' },
-    ],
-    'rockface-stone': [
-        { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
-        { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
-        { name: 'Mandana Red', id: 'variant-mandana-red', application: 'Floor/Wall' },
-        { name: 'Kota Stone Brown', id: 'variant-kota-brown', application: 'Floor' },
-        { name: 'Kota Stone Grey', id: 'variant-kota-grey', application: 'Floor' },
-        { name: 'Kota Stone Yellow', id: 'variant-kota-yellow', application: 'Floor' },
-        { name: 'Basalt Stone', id: 'variant-basalt', application: 'Floor/Wall' },
-    ],
-    'stepping-stone': [
-        { name: 'Autumn Brown', id: 'variant-autumn-brown', application: 'Floor/Wall' },
-        { name: 'Kandla Grey', id: 'variant-kandla-grey', application: 'Floor/Wall' },
-        { name: 'Mandana Red', id: 'variant-mandana-red', application: 'Floor/Wall' },
-        { name: 'Kota Stone Brown', id: 'variant-kota-brown', application: 'Floor' },
-        { name: 'Kota Stone Grey', id: 'variant-kota-grey', application: 'Floor' },
-        { name: 'Kota Stone Yellow', id: 'variant-kota-yellow', application: 'Floor' },
-        { name: 'Basalt Stone', id: 'variant-basalt', application: 'Floor/Wall' },
-    ]
-};
+import { productsByCategory } from '@/lib/products';
 
 export default function CategoryPage() {
     const params = useParams();
     const category = params.slug as string;
     const categoryTitle = category.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
-    const variants = products[category as keyof typeof products] || [];
+    const variants = productsByCategory[category as keyof typeof productsByCategory] || [];
     const categoryImage = PlaceHolderImages.find(p => p.id === `category-${category}`);
 
     const [selectedApplication, setSelectedApplication] = useState('All');
@@ -111,7 +71,7 @@ export default function CategoryPage() {
                         {filteredVariants.map((variant) => {
                             const placeholder = PlaceHolderImages.find(p => p.id === variant.id);
                             return (
-                                <div key={variant.name} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                                <Link key={variant.id} href={`/product/${variant.id}`} className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                                     <div className="aspect-[3/4] relative">
                                         {placeholder && (
                                             <Image
@@ -133,7 +93,7 @@ export default function CategoryPage() {
                                             </p>
                                         )}
                                     </div>
-                                </div>
+                                </Link>
                             )
                         })}
                     </div>
