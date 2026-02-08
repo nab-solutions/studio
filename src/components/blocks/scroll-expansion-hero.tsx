@@ -156,6 +156,8 @@ const ScrollExpandMedia = ({
 
   const firstWord = title ? title.split(' ')[0] : '';
   const restOfTitle = title ? title.split(' ').slice(1).join(' ') : '';
+  
+  const isVideoBg = bgImageSrc?.endsWith('.mp4');
 
   return (
     <div
@@ -164,15 +166,35 @@ const ScrollExpandMedia = ({
     >
       <section className='relative flex flex-col items-center justify-start min-h-[100dvh]'>
         <div className='relative w-full flex flex-col items-center min-h-[100dvh]'>
-          <motion.div
-            className='absolute inset-0 z-0 h-full bg-cover bg-center'
-            style={{ backgroundImage: bgImageSrc ? `url(${bgImageSrc})` : 'none' }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 - scrollProgress }}
-            transition={{ duration: 0.1 }}
-          >
-            <div className='absolute inset-0 bg-black/10' />
-          </motion.div>
+           {isVideoBg ? (
+            <motion.div
+              className="absolute inset-0 z-0"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 - scrollProgress }}
+              transition={{ duration: 0.1 }}
+            >
+              <video
+                src={bgImageSrc}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/10" />
+            </motion.div>
+          ) : (
+            <motion.div
+              className='absolute inset-0 z-0 h-full bg-cover bg-center'
+              style={{ backgroundImage: bgImageSrc ? `url(${bgImageSrc})` : 'none' }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 - scrollProgress }}
+              transition={{ duration: 0.1 }}
+            >
+              <div className='absolute inset-0 bg-black/10' />
+            </motion.div>
+          )}
 
           <div className='container mx-auto flex flex-col items-center justify-start relative z-10'>
             <div className='flex flex-col items-center justify-center w-full h-[100dvh] relative'>

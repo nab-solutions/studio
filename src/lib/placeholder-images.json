@@ -8,9 +8,9 @@
     },
     {
       "id": "image-background",
-      "description": "Background GIF for the image hero.",
-      "imageUrl": "/background.gif",
-      "imageHint": "stone animation"
+      "description": "Background video for the image hero.",
+      "imageUrl": "/background.mp4",
+      "imageHint": "stone video"
     },
     {
       "id": "category-sandstone",
