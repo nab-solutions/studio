@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Facebook, Instagram, Youtube, Linkedin, Phone, Mail, MapPin } from 'lucide-react';
+import { ThemeToggle } from '../theme-toggle';
 
 const socialLinks = [
   { name: 'Facebook', icon: Facebook, href: '#' },
@@ -134,9 +135,12 @@ export default function Footer() {
                             ))}
                         </div>
                     </div>
-                    <p className="text-center text-xs text-muted-foreground mt-8">
-                        Copyright &copy; {currentYear} Stone Emporium. All Rights Reserved.
-                    </p>
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
+                        <p className="text-center text-xs text-muted-foreground">
+                            Copyright &copy; {currentYear} Stone Emporium. All Rights Reserved.
+                        </p>
+                        <ThemeToggle />
+                    </div>
                 </div>
             </div>
         </footer>
