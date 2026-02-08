@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Footer from '@/components/layout/footer';
 import { ThemeProvider } from '@/components/theme-provider';
+import Header from '@/components/layout/header';
 
 export const metadata: Metadata = {
   title: 'Stone Emporium',
@@ -23,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased flex flex-col min-h-screen">
         <ThemeProvider>
+            <Header />
             <main className="flex-grow">{children}</main>
             <Footer />
             <Toaster />
