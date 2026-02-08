@@ -7,7 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain, Search, Package, ThumbsUp, ArrowDown } from 'lucide-react';
+import { Factory, CircleDollarSign, ShieldCheck, Ship, Building2, Trees, Square, PanelTop, LayoutGrid, ArrowRight, Mountain, Search, Package, ThumbsUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -440,35 +440,39 @@ const Content = () => {
         {/* Desktop View */}
         <div className="hidden md:grid md:grid-cols-2 gap-12 items-start">
           <div className="sticky top-28">
-            <div className="flex flex-col items-center">
-              {qualitySteps.map((step, index) => {
-                const Icon = step.icon;
-                const isActive = activeQualityStep.id === step.id;
-                return (
-                  <div key={step.id} className="flex w-full max-w-sm flex-col items-center">
-                    <button
-                      onClick={() => setActiveQualityStep(step)}
-                      className={cn(
-                        "flex items-center gap-4 p-4 rounded-lg text-left transition-all duration-300 border-2 w-full",
-                        isActive ? "bg-card shadow-lg border-primary" : "bg-card/50 border-transparent hover:bg-card hover:shadow-md"
-                      )}
-                    >
+            <div className="relative pl-12 pr-4">
+              <div className="absolute left-6 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
+              <div className="flex flex-col gap-12">
+                {qualitySteps.map((step) => {
+                  const Icon = step.icon;
+                  const isActive = activeQualityStep.id === step.id;
+                  return (
+                    <div key={step.id} className="relative">
                       <div className={cn(
-                        "w-16 h-16 rounded-full flex items-center justify-center transition-colors flex-shrink-0",
-                        isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
-                      )}>
-                        <Icon className="w-8 h-8" />
-                      </div>
-                      <div>
-                        <h3 className="font-headline text-xl font-bold">{step.title}</h3>
-                      </div>
-                    </button>
-                    {index < qualitySteps.length - 1 && (
-                      <ArrowDown className="w-6 h-6 text-muted-foreground my-2" />
-                    )}
-                  </div>
-                );
-              })}
+                        "absolute left-6 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-4 border-background bg-muted transition-all duration-300",
+                        isActive && "bg-primary scale-125"
+                      )}></div>
+                      <button
+                        onClick={() => setActiveQualityStep(step)}
+                        className={cn(
+                          "flex items-center gap-4 p-4 rounded-lg text-left transition-all duration-300 border-2 w-full",
+                          isActive ? "bg-card shadow-lg border-primary" : "bg-background/50 border-transparent hover:bg-card hover:shadow-md"
+                        )}
+                      >
+                        <div className={cn(
+                          "w-16 h-16 rounded-full flex items-center justify-center transition-colors flex-shrink-0",
+                          isActive ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                        )}>
+                          <Icon className="w-8 h-8" />
+                        </div>
+                        <div>
+                          <h3 className="font-headline text-xl font-bold">{step.title}</h3>
+                        </div>
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
           <div className="relative">
