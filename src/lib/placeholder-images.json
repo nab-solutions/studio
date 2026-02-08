@@ -8,9 +8,9 @@
     },
     {
       "id": "image-background",
-      "description": "Background image for the image hero, showing a desert landscape.",
-      "imageUrl": "/image-background.png",
-      "imageHint": "desert landscape"
+      "description": "Background GIF for the image hero.",
+      "imageUrl": "/background.gif",
+      "imageHint": "stone animation"
     },
     {
       "id": "category-sandstone",
